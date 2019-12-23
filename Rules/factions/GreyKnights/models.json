@@ -242,6 +242,14 @@
           {
             "WeaponId": "PSC",
             "Cost": 7
+          },
+          {
+            "WeaponId": "MTDN",
+            "Cost": 8
+          },
+          {
+            "WeaponId": "GLN",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -446,7 +454,7 @@
           },
           {
             "WeaponId": "COP",
-            "Cost": 4
+            "Cost": 12
           },
           {
             "WeaponId": "MTDN",
@@ -455,6 +463,10 @@
           {
             "WeaponId": "BOST",
             "Cost": 4
+          },
+          {
+            "WeaponId": "GLN",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -554,7 +566,20 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -606,7 +631,32 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          },
+          {
+            "WeaponId": "INC",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "EX",
+            "Cost": 8
+          },
+          {
+            "WeaponId": "PSC",
+            "Cost": 4
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -651,7 +701,20 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          }
+        ],
         "LevelCosts": []
       }
     ],
@@ -729,7 +792,20 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -781,7 +857,32 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          },
+          {
+            "WeaponId": "INC",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "EX",
+            "Cost": 8
+          },
+          {
+            "WeaponId": "PSC",
+            "Cost": 4
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -826,7 +927,20 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "MTDN",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "HFN",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "SFN",
+            "Cost": 3
+          }
+        ],
         "LevelCosts": []
       }
     ],

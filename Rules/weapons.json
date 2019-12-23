@@ -4213,7 +4213,7 @@
   },
   {
     "Id": "EX",
-    "Cost": 8,
+    "Cost": 3,
     "NameEn": "Psilencer",
     "NameFr": "Expurgateur",
     "NameDe": "Psipulser",
@@ -6380,7 +6380,7 @@
   },
   {
     "Id": "HFN",
-    "Cost": 1,
+    "Cost": 0,
     "NameEn": "Nemesis force halberd",
     "NameFr": "Hallebarde de force Nemesis",
     "NameDe": "Nemesis-Psihellebarde",
@@ -6786,7 +6786,7 @@
   },
   {
     "Id": "INC",
-    "Cost": 1,
+    "Cost": 3,
     "NameEn": "Incinerator",
     "NameFr": "Incinerator",
     "NameDe": "Erlöser-Flammenwerfer",
@@ -8829,7 +8829,7 @@
   },
   {
     "Id": "MTDN",
-    "Cost": 4,
+    "Cost": 2,
     "NameEn": "Nemesis Daemon hammer",
     "NameFr": "Marteau tueur de démons Nemesis",
     "NameDe": "Nemesis-Dämonenhammer",
@@ -10371,7 +10371,7 @@
   },
   {
     "Id": "PSC",
-    "Cost": 4,
+    "Cost": 2,
     "NameEn": "Psycannon",
     "NameFr": "Psycannon",
     "NameDe": "Psibolter",
@@ -10817,7 +10817,7 @@
   },
   {
     "Id": "SFN",
-    "Cost": 3,
+    "Cost": 0,
     "NameEn": "Nemesis warding stave",
     "NameFr": "Spectre de force Nemesis",
     "NameDe": "Nemesis-Wehrstab",
