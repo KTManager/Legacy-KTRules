@@ -1,0 +1,2 @@
+# use jsonnet for the build script
+jsonnet ~= 0.14.0

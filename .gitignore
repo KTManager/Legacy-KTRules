@@ -1,3 +1,7 @@
+
+.vscode
+out
+
 # Some defaults:
 
 # Created by https://www.gitignore.io/api/vim,ruby,linux,macos,windows,visualstudiocode,visualstudio
