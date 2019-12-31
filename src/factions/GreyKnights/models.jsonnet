@@ -1,12 +1,12 @@
+local utils = import '../../utils.libsonnet';
 [
+  utils.Translate("Name", "Grey Knight") +
+  utils.Translate("Keywords",
+    en="IMPERIUM, ADEPTUS ASTARTES, INFANTRY, PSYKER, GREY KNIGHT",
+    de="IMPERIUM, ADEPTUS ASTARTES, INFANTERIE, PSIONIKER, GREY KNIGHT",
+  ) +
   {
     "Id": "GK",
-    "NameEn": "Grey Knight",
-    "NameFr": "Grey Knight",
-    "NameDe": "Grey Knight",
-    "KeywordsEn": "IMPERIUM, ADEPTUS ASTARTES, INFANTERY, PSYKER, GREY KNIGHT",
-    "KeywordsFr": "IMPERIUM, ADEPTUS ASTARTES, INFANTERY, PSYKER, GREY KNIGHT",
-    "KeywordsDe": "IMPERIUM, ADEPTUS ASTARTES, INFANTERY, PSIONIKER, GREY KNIGHT",
     "ModelProfiles": [
       {
         "Id": "GK1",
@@ -29,23 +29,7 @@
         "NumberOfPsychicsManifestationPerRound": 1,
         "NumberOfPsychicsDenialPerRound": 1,
         "WarGearOptions": [],
-        "Specialists": [
-          {
-            "SpecialistId": "CB"
-          },
-          {
-            "SpecialistId": "CO"
-          },
-          {
-            "SpecialistId": "D"
-          },
-          {
-            "SpecialistId": "V"
-          },
-          {
-            "SpecialistId": "Z"
-          }
-        ],
+        "Specialists": utils.Specialists(["CB", "CO", "D", "V", "Z"]),
         "ModelProfileWeapons": [],
         "CostOverrides": [],
         "LevelCosts": []
