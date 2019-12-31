@@ -108,6 +108,30 @@
     "Details": []
   },
   {
+    "Id": "PTR8",
+    "ModelId": "GKTE",
+    "ModelProfileId": null,
+    "NameEn": "Transhuman Physiology",
+    "NameFr": "Physiologie transhumaine",
+    "NameDe": "Transhumane Physiologie",
+    "DescriptionEn": "Ignore the penalty to this model’s hit rolls from one flesh wound it has suffered.",
+    "DescriptionFr": "Ignorez la pénalité imposée aux jets de touche de cette figurine par 1 blessure légère.",
+    "DescriptionDe": "Ignoriere den Abzug auf Trefferwürfe dieses Modells durch die erste erlittene Fleischwunde.",
+    "Details": []
+  },
+  {
+    "Id": "PTR9",
+    "ModelId": "GKPA",
+    "ModelProfileId": null,
+    "NameEn": "Transhuman Physiology",
+    "NameFr": "Physiologie transhumaine",
+    "NameDe": "Transhumane Physiologie",
+    "DescriptionEn": "Ignore the penalty to this model’s hit rolls from one flesh wound it has suffered.",
+    "DescriptionFr": "Ignorez la pénalité imposée aux jets de touche de cette figurine par 1 blessure légère.",
+    "DescriptionDe": "Ignoriere den Abzug auf Trefferwürfe dieses Modells durch die erste erlittene Fleischwunde.",
+    "Details": []
+  },
+  {
     "Id": "RBA",
     "ModelId": null,
     "ModelProfileId": null,
