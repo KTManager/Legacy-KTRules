@@ -1,3 +1,4 @@
+local common = import 'common.libsonnet';
 [
   {
     "Id": "AAB",
@@ -1348,7 +1349,7 @@
   },
   {
     "Id": "BOST",
-    "Cost": 0,
+    "Cost": 2,
     "NameEn": "Storm bolter",
     "NameFr": "Bolter Storm",
     "NameDe": "Sturmbolter",
@@ -1481,7 +1482,7 @@
   },
   {
     "Id": "BST",
-    "Cost": 3,
+    "Cost": 5,
     "NameEn": "Storm shield",
     "NameFr": "Bouclier storm",
     "NameDe": "Sturmschild",
@@ -1967,30 +1968,25 @@
   },
   {
     "Id": "CHF",
-    "Cost": 13,
+    "Cost": 6,
     "NameEn": "Chainfist",
     "NameFr": "Poing tronçonneur",
     "NameDe": "Kettenfaust",
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "Wenn du mit dieser Waffe attackierst, musst du 1 von den Trefferwürfen abziehen.",
-    "WeaponProfiles": [
-      {
-        "Id": "CHF",
-        "NameEn": "Chainfist",
-        "NameFr": "",
-        "NameDe": "",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "x2",
-        "ArmourPenetration": "-4",
-        "Damages": "2",
-        "WeaponTypeId": "M"
-      }
-    ]
+    "WeaponProfiles": [common.WeaponProfiles.Chainfist(self)],
+  },
+  {
+    "Id": "CHFSW",
+    "Cost": 13,
+    "NameEn": "Chainfist (SPACE WOLVES only)",
+    "NameFr": "Poing tronçonneur",
+    "NameDe": "Kettenfaust",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "Wenn du mit dieser Waffe attackierst, musst du 1 von den Trefferwürfen abziehen.",
+    "WeaponProfiles": [common.WeaponProfiles.Chainfist(self)],
   },
   {
     "Id": "CHST",
@@ -7390,7 +7386,7 @@
   },
   {
     "Id": "LCL",
-    "Cost": 4,
+    "Cost": 1,
     "NameEn": "Lightning claw (single)",
     "NameFr": "Griffe Lightning (une)",
     "NameDe": "Energieklaue (einzeln)",
@@ -7417,7 +7413,7 @@
   },
   {
     "Id": "LCL2",
-    "Cost": 8,
+    "Cost": 3,
     "NameEn": "Lightning claw (pair)",
     "NameFr": "Griffe Lightning (pair)",
     "NameDe": "Energieklaue (Paar)",
@@ -8263,23 +8259,7 @@
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "MAE",
-        "NameEn": "Power maul",
-        "NameFr": "Masse énergétique",
-        "NameDe": "Energiestreitkolben",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "+2",
-        "ArmourPenetration": "-1",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
+    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
   },
   {
     "Id": "MAE0",
@@ -8290,23 +8270,7 @@
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "MAE0",
-        "NameEn": "Power maul",
-        "NameFr": "Masse énergétique",
-        "NameDe": "Energiestreitkolben",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "2",
-        "ArmourPenetration": "-1",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
+    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
   },
   {
     "Id": "MAE1",
@@ -8317,23 +8281,7 @@
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "MAE1",
-        "NameEn": "Power maul",
-        "NameFr": "Masse énergétique",
-        "NameDe": "Energiestreitkolben",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "+2",
-        "ArmourPenetration": "-1",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
+    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
   },
   {
     "Id": "MAG",
@@ -10130,13 +10078,13 @@
   {
     "Id": "PM0",
     "Cost": 0,
-    "NameEn": "Power maul",
+    "NameEn": "Power maul (SPACE WOLVES only)",
     "NameFr": "Masse énergétique",
     "NameDe": "Energiestreitkolben",
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": []
+    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
   },
   {
     "Id": "PME",
@@ -10201,23 +10149,7 @@
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "PMV",
-        "NameEn": "Power maul",
-        "NameFr": "Masse énergétique",
-        "NameDe": "Energiestreitkolben",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "2",
-        "ArmourPenetration": "-1",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
+    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
   },
   {
     "Id": "POE",
@@ -10533,7 +10465,7 @@
   },
   {
     "Id": "RBL",
-    "Cost": 14,
+    "Cost": 3,
     "NameEn": "Relic blade",
     "NameFr": "Lame relique",
     "NameDe": "Ehrenklinge",
@@ -11836,13 +11768,29 @@
   {
     "Id": "WMGL",
     "Cost": 2,
-    "NameEn": "Wirst-mounted grenade launcher",
+    "NameEn": "Wrist-mounted grenade launcher",
     "NameFr": "Lance-grenades auxiliaire",
     "NameDe": "Handgelenk-Granatwerfer",
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
-    "WeaponProfiles": []
+    "WeaponProfiles": [
+      {
+        "Id": "WMGL",
+        "NameEn": "Wrist-mounted grenade launcher",
+        "NameFr": "Lance-grenades auxiliaire",
+        "NameDe": "Handgelenk-Granatwerfer",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 12,
+        "ShotNumber": "D3",
+        "Strength": "4",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
+        "WeaponTypeId": "A"
+      }
+    ]
   },
   {
     "Id": "WSK",

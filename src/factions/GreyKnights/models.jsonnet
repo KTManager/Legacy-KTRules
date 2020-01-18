@@ -1,4 +1,9 @@
 local utils = import '../../utils.libsonnet';
+
+local storm_bolter_override = utils.CostOverrides({
+  "BOST": 0, // storm bolters are free for grey knights
+});
+
 [
   utils.Translate("Name", "Grey Knight") +
   utils.Translate("Keywords",
@@ -31,7 +36,7 @@ local utils = import '../../utils.libsonnet';
         "WarGearOptions": [],
         "Specialists": utils.Specialists(["CB", "CO", "D", "V", "Z"]),
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": storm_bolter_override,
         "LevelCosts": []
       },
       {
@@ -83,7 +88,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": storm_bolter_override,
         "LevelCosts": []
       },
       {
@@ -128,7 +133,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": storm_bolter_override,
         "LevelCosts": []
       }
     ],
@@ -218,7 +223,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "EX",
             "Cost": 16
@@ -355,7 +360,7 @@ local utils = import '../../utils.libsonnet';
             "WeaponId": "GK"
           }
         ],
-        "CostOverrides": [],
+        "CostOverrides": storm_bolter_override,
         "LevelCosts": [
           {
             "Level": 1,
@@ -550,7 +555,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4
@@ -615,7 +620,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4
@@ -685,7 +690,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4
@@ -776,7 +781,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4
@@ -841,7 +846,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4
@@ -911,7 +916,7 @@ local utils = import '../../utils.libsonnet';
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
+        "CostOverrides": storm_bolter_override + [
           {
             "WeaponId": "MTDN",
             "Cost": 4

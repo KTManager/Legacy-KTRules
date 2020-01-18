@@ -1,3 +1,5 @@
+local utils = import '../../utils.libsonnet';
+
 [
   {
     "Id": "AAB",
@@ -29,40 +31,8 @@
         "NumberOfPsychicsManifestationPerRound": 2,
         "NumberOfPsychicsDenialPerRound": 1,
         "WarGearOptions": [],
-        "Specialists": [
-          {
-            "SpecialistId": "F"
-          },
-          {
-            "SpecialistId": "FE"
-          },
-          {
-            "SpecialistId": "LH"
-          },
-          {
-            "SpecialistId": "ME"
-          },
-          {
-            "SpecialistId": "P"
-          },
-          {
-            "SpecialistId": "SH"
-          }
-        ],
-        "ModelProfileWeapons": [
-          {
-            "WeaponId": "FS"
-          },
-          {
-            "WeaponId": "GF"
-          },
-          {
-            "WeaponId": "GK"
-          },
-          {
-            "WeaponId": "PB"
-          }
-        ],
+        "Specialists": utils.Specialists(["F", "FE", "LH", "ME", "P", "SH"]),
+        "ModelProfileWeapons": utils.Ids("Weapon", ["FS", "GF", "GK", "PB"]),
         "CostOverrides": [],
         "LevelCosts": [
           {
@@ -130,38 +100,18 @@
             "Exclusion": null
           }
         ],
-        "Specialists": [
-          {
-            "SpecialistId": "F"
-          },
-          {
-            "SpecialistId": "FE"
-          },
-          {
-            "SpecialistId": "FR"
-          },
-          {
-            "SpecialistId": "LE"
-          },
-          {
-            "SpecialistId": "LH"
-          },
-          {
-            "SpecialistId": "LO"
-          },
-          {
-            "SpecialistId": "ME"
-          },
-          {
-            "SpecialistId": "SE"
-          },
-          {
-            "SpecialistId": "SH"
-          },
-          {
-            "SpecialistId": "ST"
-          }
-        ],
+        "Specialists": utils.Specialists([
+          "F",
+          "FE",
+          "FR",
+          "LE",
+          "LH",
+          "LO",
+          "ME",
+          "SE",
+          "SH",
+          "ST",
+        ]),
         "ModelProfileWeapons": [
           {
             "WeaponId": "FBAM"
@@ -176,12 +126,7 @@
             "WeaponId": "PB"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "EPE",
-            "Cost": 7
-          }
-        ],
+        "CostOverrides": utils.CostOverrides({"EPE": 7}),
         "LevelCosts": [
           {
             "Level": 1,
@@ -1557,6 +1502,8 @@
     "WarGearOptions": []
   },
   {
+    local terminator_overrides = utils.CostOverrides({"EPE": 1, "COL": 5, "COF": 9, "COP": 7}),
+
     "Id": "AATE",
     "NameEn": "Terminator",
     "NameFr": "Terminator",
@@ -1589,19 +1536,19 @@
           {
             "Id": "259",
             "MaximumPerTeam": 0,
-            "Operation": "GEN:NCCHF",
+            "Operation": "GEN:CHF",
             "Exclusion": null
           },
           {
             "Id": "282",
             "MaximumPerTeam": 0,
-            "Operation": "GEN&BOST:NCLCL2|(THA&BST)",
+            "Operation": "GEN&BOST:LCL2|(THA&BST)",
             "Exclusion": null
           },
           {
             "Id": "386",
             "MaximumPerTeam": 0,
-            "Operation": "GEN:NCCHF",
+            "Operation": "GEN:CHF",
             "Exclusion": null
           }
         ],
@@ -1630,20 +1577,7 @@
             "WeaponId": "GEN"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "CHF",
-            "Cost": 6
-          }
-        ],
+        "CostOverrides": terminator_overrides,
         "LevelCosts": []
       },
       {
@@ -1670,7 +1604,7 @@
           {
             "Id": "260",
             "MaximumPerTeam": 0,
-            "Operation": "GEN:NCCHF",
+            "Operation": "GEN:CHF",
             "Exclusion": null
           },
           {
@@ -1708,16 +1642,7 @@
             "WeaponId": "GEN"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "CHF",
-            "Cost": 6
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": terminator_overrides,
         "LevelCosts": []
       },
       {
@@ -1744,7 +1669,7 @@
           {
             "Id": "284",
             "MaximumPerTeam": 0,
-            "Operation": "EPE1&BOST:NCLCL2|(THA&BST)",
+            "Operation": "EPE&BOST:LCL2|(THA&BST)",
             "Exclusion": null
           }
         ],
@@ -1773,15 +1698,10 @@
             "WeaponId": "BOST"
           },
           {
-            "WeaponId": "EPE1"
+            "WeaponId": "EPE"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": terminator_overrides,
         "LevelCosts": []
       }
     ],
@@ -1789,6 +1709,18 @@
     "WarGearOptions": []
   },
   {
+    local veteran_overrides = utils.CostOverrides({
+      "COL": 5,
+      "COG": 4,
+      "COF": 9,
+      "COP": 7,
+      "FU": 7,
+      "LM": 10,
+      "PLA": 5,
+      "PP": 2,
+      "EPE": 1,
+    }),
+
     "Id": "AAVE",
     "NameEn": "Veteran",
     "NameFr": "Veteran",
@@ -1821,13 +1753,13 @@
           {
             "Id": "265",
             "MaximumPerTeam": 0,
-            "Operation": "PB:(PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE1|BST|THA)",
+            "Operation": "PB:(PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE|BST|THA)",
             "Exclusion": null
           },
           {
             "Id": "267",
             "MaximumPerTeam": 0,
-            "Operation": "EPT:(BO|COL|COGV|COF|COP|BOST|LF|FG|FU|PLA|PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE1|BST|THA)",
+            "Operation": "EPT:(BO|COL|COGV|COF|COP|BOST|LF|FG|FU|PLA|PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE|BST|THA)",
             "Exclusion": null
           },
           {
@@ -1837,26 +1769,7 @@
             "Exclusion": null
           }
         ],
-        "Specialists": [
-          {
-            "SpecialistId": "CB"
-          },
-          {
-            "SpecialistId": "CO"
-          },
-          {
-            "SpecialistId": "D"
-          },
-          {
-            "SpecialistId": "SN"
-          },
-          {
-            "SpecialistId": "V"
-          },
-          {
-            "SpecialistId": "Z"
-          }
-        ],
+        "Specialists": utils.Specialists(["CB", "CO", "D", "SN", "V", "Z"]),
         "ModelProfileWeapons": [
           {
             "WeaponId": "EPT"
@@ -1871,56 +1784,7 @@
             "WeaponId": "PB"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "LFL",
-            "Cost": 0
-          },
-          {
-            "WeaponId": "PP",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LCL",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "LCL2",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "RBL",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "FU",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "PLA",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -1988,28 +1852,7 @@
             "WeaponId": "SPBG"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LM",
-            "Cost": 10
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -2036,7 +1879,7 @@
           {
             "Id": "276",
             "MaximumPerTeam": 0,
-            "Operation": "SPBG&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE1)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE1))|LCL2)&!(SPBG|COL|COGV|COF|COP|BOST)",
+            "Operation": "SPBG&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE))|LCL2)&!(SPBG|COL|COGV|COF|COP|BOST)",
             "Exclusion": null
           },
           {
@@ -2083,48 +1926,7 @@
             "WeaponId": "SPBG"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "LFL",
-            "Cost": 0
-          },
-          {
-            "WeaponId": "PP",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LCL",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "LCL2",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "RBL",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -2189,24 +1991,7 @@
             "WeaponId": "SPBG"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -2245,7 +2030,7 @@
           {
             "Id": "277",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE1|RBL|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
+            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|RBL|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
             "Exclusion": null
           }
         ],
@@ -2286,48 +2071,7 @@
             "WeaponId": "PB"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "LFL",
-            "Cost": 0
-          },
-          {
-            "WeaponId": "PP",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LCL",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "LCL2",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "RBL",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -2354,7 +2098,7 @@
           {
             "Id": "285",
             "MaximumPerTeam": 0,
-            "Operation": "EPT&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE1|BST|THA)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE1|BST|THA))|LCL2)&!(BO|COL|COGV|COF|COP|BOST)",
+            "Operation": "EPT&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|BST|THA)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE|BST|THA))|LCL2)&!(BO|COL|COGV|COF|COP|BOST)",
             "Exclusion": null
           }
         ],
@@ -2395,40 +2139,7 @@
             "WeaponId": "PB"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "COL",
-            "Cost": 5
-          },
-          {
-            "WeaponId": "COF",
-            "Cost": 9
-          },
-          {
-            "WeaponId": "COP",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "BOST",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "PP",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LCL",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "LCL2",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       },
       {
@@ -2455,7 +2166,7 @@
           {
             "Id": "268",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE1|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
+            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
             "Exclusion": null
           },
           {
@@ -2505,32 +2216,7 @@
             "WeaponId": "PB"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "LFL",
-            "Cost": 0
-          },
-          {
-            "WeaponId": "PP",
-            "Cost": 2
-          },
-          {
-            "WeaponId": "LCL",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "LCL2",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "RBL",
-            "Cost": 3
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": veteran_overrides,
         "LevelCosts": []
       }
     ],
@@ -2688,7 +2374,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": utils.CostOverrides({
+          "COL": 2,
+          "COF": 8,
+          "COP": 5,
+          "BOST": 0,
+        }),
         "LevelCosts": [
           {
             "Level": 1,
@@ -2721,7 +2412,7 @@
       {
         "Id": "255",
         "MaximumPerTeam": 0,
-        "Operation": "BOST:(COL2|COP5|COF8)",
+        "Operation": "BOST:(COL|COP|COF)",
         "Exclusion": null
       }
     ]
@@ -2783,12 +2474,19 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "THA",
-            "Cost": 18
-          }
-        ],
+        "CostOverrides": utils.CostOverrides({
+          "THA": 18,
+          "LCL": 4,
+          "LCL2": 8,
+          "RBL": 14,
+          "BST": 15,
+          "COL": 2,
+          "COP": 5,
+          "COF": 8,
+          "EPE": 0,
+          "GEN": 12,
+          "BOST": 0,
+        }),
         "LevelCosts": [
           {
             "Level": 1,
@@ -2814,26 +2512,26 @@
         "WeaponId": "BOST"
       },
       {
-        "WeaponId": "EPE2"
+        "WeaponId": "EPE"
       }
     ],
     "WarGearOptions": [
       {
         "Id": "256",
         "MaximumPerTeam": 0,
-        "Operation": "BOST:(COL2|COP5|COF8|CF|LCL|PM0|EPE2|PF12|(PF12&WMGL)|PA2|RBL|BST15|THA)",
+        "Operation": "BOST:(COL|COP|COF|CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PA2|RBL|BST|THA)",
         "Exclusion": null
       },
       {
         "Id": "257",
         "MaximumPerTeam": 0,
-        "Operation": "EPE2:(CF|LCL|PM0|EPE2|PF12|(PF12&WMGL)|PA2|RBL|BST15|THA)",
+        "Operation": "EPE:(CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PA2|RBL|BST|THA)",
         "Exclusion": null
       },
       {
         "Id": "258",
         "MaximumPerTeam": 0,
-        "Operation": "EPE2&BOST:LCL2",
+        "Operation": "EPE&BOST:LCL2",
         "Exclusion": null
       }
     ]
@@ -3071,7 +2769,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": utils.CostOverrides({
+          "BOST": 4,
+          "COL": 6,
+          "COF": 12,
+          "COP": 9,
+        }),
         "LevelCosts": [
           {
             "Level": 1,
@@ -3101,7 +2804,7 @@
       {
         "Id": "253",
         "MaximumPerTeam": 0,
-        "Operation": "COL6|COF12|COP9|BOST4",
+        "Operation": "COL|COF|COP|BOST",
         "Exclusion": null
       },
       {
