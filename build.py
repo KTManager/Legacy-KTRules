@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import glob
+import hashlib
 import os
 import shutil
 import sys
@@ -35,6 +36,9 @@ def main():
             print("removing out directory")
         shutil.rmtree("out")
 
+
+    hashes = {}
+
     # get all the json files and convert them
     for file in glob.iglob("src/**/*.json*", recursive=True):
         # jsonnet files get compiled, json gets copied
@@ -49,23 +53,41 @@ def main():
         if "verbose" in args:
             print(f"{'compiling' if compiling else 'copying'} {file} to {out_file}")
 
-        # compile or read in
+        # read in the input
+        with open(file, "r") as i:
+            input_content = i.read()
+
+        # hash the input
+        hashes[file] = hashlib.sha256(input_content.encode('utf-8')).hexdigest()
+
+        # generate the output
         if compiling:
-            json_str = _jsonnet.evaluate_file(file)
+            json_str = _jsonnet.evaluate_snippet(file, input_content)
         else:
-            with open(file, "r") as i:
-                json_str = i.read()
+            json_str = input_content
 
         # write out
         os.makedirs(os.path.dirname(out_file), exist_ok=True)
         with open(out_file, "w") as o:
             o.write(json_str)
+    
+    # hash the hashes for version number
+    version_hash = hashlib.sha256()
+    for file, digest in hashes.items():
+        summary = file + " " + digest + "\n"
+        if "verbose" in args:
+            print(summary)
+        version_hash.update(summary.encode('utf-8'))
+    version_hash_digest = version_hash.hexdigest()
 
     # write out version number
     with open("src/version.txt", "r") as i:
         with open("out/version.txt", "w") as o:
             # read in
-            version = i.read()
+            version = i.read().strip()
+
+            # add the version hash
+            version += "-" + version_hash_digest
 
             # non-release builds get 'dev' so that KT Manager always picks them up as new
             if "release" not in args:
