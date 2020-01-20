@@ -1375,17 +1375,6 @@ local common = import 'common.libsonnet';
     ]
   },
   {
-    "Id": "BOST4",
-    "Cost": 4,
-    "NameEn": "Storm bolter",
-    "NameFr": "Bolter Storm",
-    "NameDe": "Sturmbolter",
-    "DescriptionEn": "",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": []
-  },
-  {
     "Id": "BRA",
     "Cost": 3,
     "NameEn": "Brayhorn",
