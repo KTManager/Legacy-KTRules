@@ -539,5 +539,228 @@ local utils = import 'utils.libsonnet';
           }
         ]
       },
+
+      Terminator(gunnerId, sergeantId, mpToWgoIds, costOverrideBonuses = {}):: {
+        local terminator_overrides = utils.CostOverrides(
+          {"EPE": 1, "COL": 5, "COF": 9, "COP": 7},
+          costOverrideBonuses,
+        ),
+        local model = self,
+
+        "Id": error "must set Id",
+        "NameEn": "Terminator",
+        "NameFr": "Terminator",
+        "NameDe": "Terminator",
+        "KeywordsEn": "IMPERIUM, INFANTRY, TERMINATOR",
+        "KeywordsFr": "IMPERIUM, INFANTRY, TERMINATOR",
+        "KeywordsDe": "IMPERIUM, INFANTRY, TERMINATOR",
+        "ModelProfiles": [
+          {
+            "Id": model.Id,
+            "Movement": 5,
+            "WeaponSkill": 3,
+            "BallisticSkill": 3,
+            "Strength": 4,
+            "Toughness": 4,
+            "Wounds": 2,
+            "Attacks": "2",
+            "Leadership": 8,
+            "Save": 2,
+            "MaximumNumber": 0,
+            "Cost": 25,
+            "NameEn": "Terminator",
+            "NameFr": "Terminator",
+            "NameDe": "Terminator",
+            "IsCommander": false,
+            "NumberOfKnownPsychics": 0,
+            "NumberOfPsychicsManifestationPerRound": 0,
+            "NumberOfPsychicsDenialPerRound": 0,
+            local wgoIds = mpToWgoIds[model.Id],
+            "WarGearOptions": [
+              {
+                "Id": wgoIds[0],
+                "MaximumPerTeam": 0,
+                "Operation": "GEN:CHF",
+                "Exclusion": null
+              },
+              {
+                "Id": wgoIds[1],
+                "MaximumPerTeam": 0,
+                "Operation": "GEN&BOST:LCL2|(THA&BST)",
+                "Exclusion": null
+              },
+            ] + if std.length(wgoIds) < 3 then [] else [
+              {
+                "Id": wgoIds[2],
+                "MaximumPerTeam": 0,
+                "Operation": "GEN:CHF",
+                "Exclusion": null
+              }
+            ],
+            "Specialists": [
+              {
+                "SpecialistId": "CB"
+              },
+              {
+                "SpecialistId": "CO"
+              },
+              {
+                "SpecialistId": "D"
+              },
+              {
+                "SpecialistId": "V"
+              },
+              {
+                "SpecialistId": "Z"
+              }
+            ],
+            "ModelProfileWeapons": [
+              {
+                "WeaponId": "BOST"
+              },
+              {
+                "WeaponId": "GEN"
+              }
+            ],
+            "CostOverrides": terminator_overrides,
+            "LevelCosts": []
+          },
+          {
+            "Id": gunnerId,
+            "Movement": 5,
+            "WeaponSkill": 3,
+            "BallisticSkill": 3,
+            "Strength": 4,
+            "Toughness": 4,
+            "Wounds": 2,
+            "Attacks": "2",
+            "Leadership": 8,
+            "Save": 2,
+            "MaximumNumber": 2,
+            "Cost": 26,
+            "NameEn": "Terminator Gunner",
+            "NameFr": "Terminator Gunner",
+            "NameDe": "Terminator Gunner",
+            "IsCommander": false,
+            "NumberOfKnownPsychics": 0,
+            "NumberOfPsychicsManifestationPerRound": 0,
+            "NumberOfPsychicsDenialPerRound": 0,
+            local wgoIds = mpToWgoIds[gunnerId],
+            "WarGearOptions": [
+              {
+                "Id": wgoIds[0],
+                "MaximumPerTeam": 0,
+                "Operation": "GEN:CHF",
+                "Exclusion": null
+              },
+              {
+                "Id": wgoIds[1],
+                "MaximumPerTeam": 0,
+                "Operation": "BOST:(ACA|HFL|PLCA|(CML&BOST))",
+                "Exclusion": null
+              }
+            ],
+            "Specialists": [
+              {
+                "SpecialistId": "AL"
+              },
+              {
+                "SpecialistId": "CB"
+              },
+              {
+                "SpecialistId": "CO"
+              },
+              {
+                "SpecialistId": "D"
+              },
+              {
+                "SpecialistId": "V"
+              },
+              {
+                "SpecialistId": "Z"
+              }
+            ],
+            "ModelProfileWeapons": [
+              {
+                "WeaponId": "BOST"
+              },
+              {
+                "WeaponId": "GEN"
+              }
+            ],
+            "CostOverrides": terminator_overrides,
+            "LevelCosts": []
+          },
+          {
+            "Id": sergeantId,
+            "Movement": 5,
+            "WeaponSkill": 3,
+            "BallisticSkill": 3,
+            "Strength": 4,
+            "Toughness": 4,
+            "Wounds": 2,
+            "Attacks": "3",
+            "Leadership": 9,
+            "Save": 2,
+            "MaximumNumber": 1,
+            "Cost": 27,
+            "NameEn": "Terminator Sergeant",
+            "NameFr": "Terminator Sergeant",
+            "NameDe": "Terminator Sergeant",
+            "IsCommander": false,
+            "NumberOfKnownPsychics": 0,
+            "NumberOfPsychicsManifestationPerRound": 0,
+            "NumberOfPsychicsDenialPerRound": 0,
+            local wgoIds = mpToWgoIds[sergeantId],
+            "WarGearOptions": [
+              {
+                "Id": wgoIds[0],
+                "MaximumPerTeam": 0,
+                "Operation": "EPE&BOST:LCL2|(THA&BST)",
+                "Exclusion": null
+              }
+            ] + if std.length(wgoIds) < 2 then [] else [
+              {
+                "Id": wgoIds[1],
+                "MaximumPerTeam": 0,
+                "Operation": "EPE1:CHF",
+                "Exclusion": null
+              },
+            ],
+            "Specialists": [
+              {
+                "SpecialistId": "CB"
+              },
+              {
+                "SpecialistId": "CO"
+              },
+              {
+                "SpecialistId": "D"
+              },
+              {
+                "SpecialistId": "L"
+              },
+              {
+                "SpecialistId": "V"
+              },
+              {
+                "SpecialistId": "Z"
+              }
+            ],
+            "ModelProfileWeapons": [
+              {
+                "WeaponId": "BOST"
+              },
+              {
+                "WeaponId": "EPE"
+              }
+            ],
+            "CostOverrides": terminator_overrides,
+            "LevelCosts": []
+          }
+        ],
+        "ModelWeapons": [],
+        "WarGearOptions": []
+      },
     },
 }
