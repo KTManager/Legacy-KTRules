@@ -588,12 +588,7 @@
             "WeaponId": "PSR"
           }
         ],
-        "CostOverrides": [
-          {
-            "WeaponId": "LPE",
-            "Cost": 0
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": [
           {
             "Level": 1,
