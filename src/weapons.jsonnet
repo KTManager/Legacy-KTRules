@@ -10882,7 +10882,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "SS",
-    "Cost": 3,
+    "Cost": 5,
     "NameEn": "Singing spear",
     "NameFr": "Lance chantante",
     "NameDe": "Runenspeer",

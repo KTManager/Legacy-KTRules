@@ -74,6 +74,10 @@
           {
             "WeaponId": "PFU",
             "Cost": 10
+          },
+          {
+            "WeaponId": "ASFS",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -1134,7 +1138,12 @@
             "WeaponId": "W"
           }
         ],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "SS",
+            "Cost": 3
+          }
+        ],
         "LevelCosts": [
           {
             "Level": 1,
