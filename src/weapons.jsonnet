@@ -11442,7 +11442,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "VBE",
-    "Cost": 0,
+    "Cost": 1,
     "NameEn": "Venom blade",
     "NameFr": "Lame venimeuse",
     "NameDe": "Giftklinge",

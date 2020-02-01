@@ -84,6 +84,10 @@
           {
             "WeaponId": "PDI",
             "Cost": 10
+          },
+          {
+            "WeaponId": "VBE",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -940,7 +944,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "NEU",
+            "Cost": 1
+          }
+        ],
         "LevelCosts": []
       },
       {
