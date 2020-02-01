@@ -230,10 +230,6 @@
           {
             "WeaponId": "BST",
             "Cost": 15
-          },
-          {
-            "WeaponId": "BST",
-            "Cost": 0
           }
         ],
         "LevelCosts": [

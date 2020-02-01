@@ -1481,17 +1481,6 @@ local common = import 'common.libsonnet';
     "WeaponProfiles": []
   },
   {
-    "Id": "BST15",
-    "Cost": 15,
-    "NameEn": "Storm shield",
-    "NameFr": "Bouclier storm",
-    "NameDe": "Sturmschild",
-    "DescriptionEn": "A model with a storm shield has a 3+ invulnerable save.",
-    "DescriptionFr": "Une figurine avec bouclier Storm a une sauvegarde invulnérable de 3+.",
-    "DescriptionDe": "Ein Modell mit einem Sturmschild hat einen Rettungswurf von 3+.",
-    "WeaponProfiles": []
-  },
-  {
     "Id": "CA",
     "Cost": 0,
     "NameEn": "Crozius arcanum",
