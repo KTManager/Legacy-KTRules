@@ -520,7 +520,7 @@
           {
             "Id": "26",
             "MaximumPerTeam": 0,
-            "Operation": "EPT:EPE1",
+            "Operation": "EPT:EPE",
             "Exclusion": null
           }
         ],
@@ -558,7 +558,12 @@
             "WeaponId": "PLS"
           }
         ],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "EPE",
+            "Cost": 1
+          }
+        ],
         "LevelCosts": []
       }
     ],
@@ -1230,7 +1235,7 @@
           {
             "Id": "31",
             "MaximumPerTeam": 0,
-            "Operation": "EPT:EPE1|GEN2",
+            "Operation": "EPT:EPE|GEN",
             "Exclusion": null
           }
         ],
@@ -1268,7 +1273,16 @@
             "WeaponId": "PRL"
           }
         ],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "GEN",
+            "Cost": 2
+          },
+          {
+            "WeaponId": "EPE",
+            "Cost": 1
+          }
+        ],
         "LevelCosts": []
       }
     ],
@@ -1405,15 +1419,15 @@
         "LevelCosts": [
           {
             "Level": 4,
-            "Cost": 20
+            "Cost": 60
           },
           {
             "Level": 3,
-            "Cost": 20
+            "Cost": 40
           },
           {
             "Level": 2,
-            "Cost": 20
+            "Cost": 25
           },
           {
             "Level": 1,
@@ -1503,6 +1517,14 @@
           {
             "WeaponId": "GEN",
             "Cost": 8
+          },
+          {
+            "WeaponId": "EPT",
+            "Cost": 1
+          },
+          {
+            "WeaponId": "PP",
+            "Cost": 3
           }
         ],
         "LevelCosts": [
