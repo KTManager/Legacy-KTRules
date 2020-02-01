@@ -314,6 +314,18 @@
           {
             "WeaponId": "NMI",
             "Cost": 17
+          },
+          {
+            "WeaponId": "TAABFP",
+            "Cost": 6
+          },
+          {
+            "WeaponId": "EFU",
+            "Cost": 17
+          },
+          {
+            "WeaponId": "TAPR",
+            "Cost": 7
           }
         ],
         "LevelCosts": [
@@ -686,14 +698,6 @@
           {
             "WeaponId": "LF",
             "Cost": 4
-          },
-          {
-            "WeaponId": "CIN",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "NMI",
-            "Cost": 17
           }
         ],
         "LevelCosts": [
@@ -1041,14 +1045,6 @@
           {
             "WeaponId": "LF",
             "Cost": 4
-          },
-          {
-            "WeaponId": "CIN",
-            "Cost": 7
-          },
-          {
-            "WeaponId": "NMI",
-            "Cost": 17
           }
         ],
         "LevelCosts": []
@@ -1462,11 +1458,15 @@
           },
           {
             "WeaponId": "CIN",
-            "Cost": 7
+            "Cost": 4
           },
           {
             "WeaponId": "NMI",
-            "Cost": 17
+            "Cost": 10
+          },
+          {
+            "WeaponId": "EFU",
+            "Cost": 10
           }
         ],
         "LevelCosts": []
@@ -1520,11 +1520,15 @@
           },
           {
             "WeaponId": "CIN",
-            "Cost": 7
+            "Cost": 4
           },
           {
             "WeaponId": "NMI",
-            "Cost": 17
+            "Cost": 10
+          },
+          {
+            "WeaponId": "EFU",
+            "Cost": 10
           }
         ],
         "LevelCosts": []
