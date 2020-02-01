@@ -6863,7 +6863,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "KK",
-    "Cost": 0,
+    "Cost": 1,
     "NameEn": "Choppa",
     "NameFr": "Kikoup'",
     "NameDe": "Spalta",
@@ -9506,7 +9506,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "PEK",
-    "Cost": 4,
+    "Cost": 5,
     "NameEn": "Power klaw",
     "NameFr": "Pince énergetik'",
     "NameDe": "Energiekrallä",

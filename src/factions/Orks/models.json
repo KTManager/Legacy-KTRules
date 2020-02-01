@@ -205,8 +205,8 @@
         ],
         "CostOverrides": [
           {
-            "WeaponId": "PEK",
-            "Cost": 5
+            "WeaponId": "KK",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -268,12 +268,7 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "PEK",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": [
           {
             "Level": 1,
@@ -348,12 +343,7 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "PEK",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": []
       },
       {
@@ -398,12 +388,7 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "PEK",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": []
       }
     ],
@@ -750,7 +735,16 @@
         "WarGearOptions": [],
         "Specialists": [],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "PEK",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "ARK",
+            "Cost": 7
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -805,7 +799,11 @@
         "CostOverrides": [
           {
             "WeaponId": "PEK",
-            "Cost": 5
+            "Cost": 4
+          },
+          {
+            "WeaponId": "ARK",
+            "Cost": 7
           }
         ],
         "LevelCosts": []
@@ -856,12 +854,7 @@
         "WarGearOptions": [],
         "Specialists": [],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "PEK",
-            "Cost": 5
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": []
       },
       {
@@ -924,10 +917,6 @@
         "ModelProfileWeapons": [],
         "CostOverrides": [
           {
-            "WeaponId": "PEK",
-            "Cost": 5
-          },
-          {
             "WeaponId": "ARK",
             "Cost": 7
           },
@@ -944,10 +933,6 @@
             "Cost": 0
           },
           {
-            "WeaponId": "KK",
-            "Cost": 1
-          },
-          {
             "WeaponId": "ORKS1",
             "Cost": 5
           },
@@ -958,6 +943,10 @@
           {
             "WeaponId": "ORPS",
             "Cost": 1
+          },
+          {
+            "WeaponId": "KK",
+            "Cost": 0
           }
         ],
         "LevelCosts": []
@@ -1019,10 +1008,6 @@
         "ModelProfileWeapons": [],
         "CostOverrides": [
           {
-            "WeaponId": "PEK",
-            "Cost": 5
-          },
-          {
             "WeaponId": "ARK",
             "Cost": 7
           },
@@ -1039,10 +1024,6 @@
             "Cost": 0
           },
           {
-            "WeaponId": "KK",
-            "Cost": 1
-          },
-          {
             "WeaponId": "ORKS1",
             "Cost": 5
           },
@@ -1053,6 +1034,10 @@
           {
             "WeaponId": "ORPS",
             "Cost": 1
+          },
+          {
+            "WeaponId": "KK",
+            "Cost": 0
           }
         ],
         "LevelCosts": []
