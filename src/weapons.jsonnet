@@ -8230,28 +8230,6 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "MAE",
-    "Cost": 2,
-    "NameEn": "Power maul",
-    "NameFr": "Masse énergétique",
-    "NameDe": "Energiestreitkolben",
-    "DescriptionEn": "",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
-  },
-  {
-    "Id": "MAE0",
-    "Cost": 0,
-    "NameEn": "Power maul",
-    "NameFr": "Masse énergétique",
-    "NameDe": "Energiestreitkolben",
-    "DescriptionEn": "",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [common.WeaponProfiles.PowerMaul(self)],
-  },
-  {
-    "Id": "MAE1",
     "Cost": 1,
     "NameEn": "Power maul",
     "NameFr": "Masse énergétique",
@@ -8900,60 +8878,6 @@ local common = import 'common.libsonnet';
     ]
   },
   {
-    "Id": "NCLCL",
-    "Cost": 1,
-    "NameEn": "Lightning claw (single)",
-    "NameFr": "Griffe Lightning (une)",
-    "NameDe": "Energieklaue (einzeln)",
-    "DescriptionEn": "You can re-roll failed wound rolls for this weapon.",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "NCLCL",
-        "NameEn": "Lightning claw (Single)",
-        "NameFr": "",
-        "NameDe": "",
-        "DescriptionEn": "You can re-roll failed wound rolls for this weapon. If a model is armed with two lightning claws, each time it fights it can make 1 additional attack with them.",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "U",
-        "ArmourPenetration": "-2",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
-  },
-  {
-    "Id": "NCLCL2",
-    "Cost": 3,
-    "NameEn": "Lightning claw (pair)",
-    "NameFr": "Griffe Lightning (pair)",
-    "NameDe": "Energieklaue (Paar)",
-    "DescriptionEn": "You can re-roll failed wound rolls for this weapon. If a model is armed with two lightning claws, each time it fightsit can make 1 additional attack with them.",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "NCLCL2",
-        "NameEn": "Lightning claw (Pair)",
-        "NameFr": "",
-        "NameDe": "",
-        "DescriptionEn": "You can re-roll failed wound rolls for this weapon. If a model is armed with two lightning claws, each time it fights it can make 1 additional attack with them.",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "U",
-        "ArmourPenetration": "-2",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
-  },
-  {
     "Id": "NDI",
     "Cost": 2,
     "NameEn": "Neuro disruptor",
@@ -9284,33 +9208,6 @@ local common = import 'common.libsonnet';
     ]
   },
   {
-    "Id": "PA2",
-    "Cost": 2,
-    "NameEn": "Power axe",
-    "NameFr": "Hache énergétique",
-    "NameDe": "Energieaxt",
-    "DescriptionEn": "",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "PA2",
-        "NameEn": "Power axe",
-        "NameFr": "Hache énergétique",
-        "NameDe": "Energieaxt",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 0,
-        "ShotNumber": "0",
-        "Strength": "+1",
-        "ArmourPenetration": "-2",
-        "Damages": "1",
-        "WeaponTypeId": "M"
-      }
-    ]
-  },
-  {
     "Id": "PAC",
     "Cost": 0,
     "NameEn": "Particle Caster",
@@ -9339,7 +9236,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "PAX",
-    "Cost": 5,
+    "Cost": 2,
     "NameEn": "Power axe",
     "NameFr": "Hache énergétique",
     "NameDe": "Energieaxt",

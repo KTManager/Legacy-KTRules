@@ -365,13 +365,13 @@ local utils = import 'utils.libsonnet';
           {
             "Id": wgoIds[0],
             "MaximumPerTeam": 0,
-            "Operation": "BOST:(COL|COP|COF|CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PA2|RBL|BST|THA)",
+            "Operation": "BOST:(COL|COP|COF|CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PAX|RBL|BST|THA)",
             "Exclusion": null
           },
           {
             "Id": wgoIds[1],
             "MaximumPerTeam": 0,
-            "Operation": "EPE:(CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PA2|RBL|BST|THA)",
+            "Operation": "EPE:(CHFSW|LCL|PM0|EPE|GEN|(GEN&WMGL)|PAX|RBL|BST|THA)",
             "Exclusion": null
           },
           {

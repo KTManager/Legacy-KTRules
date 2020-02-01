@@ -124,7 +124,7 @@
           {
             "Id": "358",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:(((PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE1|EPE1)&!(PB|HACHAX|EPT|PP|PAX|GEN|MAE1|EPE1))|LCL2)|(PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE1|EPE1)&(BO|COB|COL|COF|COP)",
+            "Operation": "PB&EPT:(((PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&!(PB|HACHAX|EPT|PP|PAX|GEN|MAE|EPE1))|LCL2)|(PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&(BO|COB|COL|COF|COP)",
             "Exclusion": null
           }
         ],
@@ -146,7 +146,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "COB",
+            "Cost": 4
+          }
+        ],
         "LevelCosts": []
       }
     ],
@@ -477,7 +482,16 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "PB",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "MAE",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": []
       }
     ],
@@ -489,7 +503,7 @@
         "WeaponId": "GK"
       },
       {
-        "WeaponId": "MAE0"
+        "WeaponId": "MAE"
       },
       {
         "WeaponId": "PB"
@@ -604,6 +618,10 @@
           {
             "WeaponId": "EPE",
             "Cost": 4
+          },
+          {
+            "WeaponId": "PAX",
+            "Cost": 5
           }
         ],
         "LevelCosts": [
@@ -841,7 +859,24 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "CHF",
+            "Cost": 13
+          },
+          {
+            "WeaponId": "LCL",
+            "Cost": 4
+          },
+          {
+            "WeaponId": "LCL2",
+            "Cost": 8
+          },
+          {
+            "WeaponId": "COB",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": [
           {
             "Level": 1,
@@ -1369,7 +1404,32 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "CHF",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "LCL",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "LCL2",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "PAX",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "MAE",
+            "Cost": 0
+          },
+          {
+            "WeaponId": "COB",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": [
           {
             "Level": 1,
@@ -1473,10 +1533,6 @@
         "ModelProfileWeapons": [],
         "CostOverrides": [
           {
-            "WeaponId": "CHF",
-            "Cost": 6
-          },
-          {
             "WeaponId": "LCL",
             "Cost": 1
           },
@@ -1550,10 +1606,6 @@
         ],
         "ModelProfileWeapons": [],
         "CostOverrides": [
-          {
-            "WeaponId": "CHF",
-            "Cost": 6
-          },
           {
             "WeaponId": "LCL",
             "Cost": 1
@@ -1629,10 +1681,6 @@
         "ModelProfileWeapons": [],
         "CostOverrides": [
           {
-            "WeaponId": "CHF",
-            "Cost": 6
-          },
-          {
             "WeaponId": "LCL",
             "Cost": 1
           },
@@ -1678,7 +1726,7 @@
       {
         "Id": "372",
         "MaximumPerTeam": 0,
-        "Operation": "HACHAX:CHF|LCL|PA2|GEN|MAE1|EPE1",
+        "Operation": "HACHAX:CHF|LCL|PAX|GEN|MAE|EPE1",
         "Exclusion": null
       }
     ]

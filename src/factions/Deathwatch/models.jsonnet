@@ -638,13 +638,13 @@ local termCostBonus = { "BOST": 4,  "COF": 2, "COP": 2, "COL": 2, "PB": 2};
           {
             "Id": "338",
             "MaximumPerTeam": 0,
-            "Operation": "PB:PG|LFL|PI|PP|EPT|LCL|LCL2|PA2|GEN|MAE1|EPE1|RBL|BST|THA",
+            "Operation": "PB:PG|LFL|PI|PP|EPT|LCL|LCL2|PAX|GEN|MAE|EPE1|RBL|BST|THA",
             "Exclusion": null
           },
           {
             "Id": "339",
             "MaximumPerTeam": 0,
-            "Operation": "EPT:PG|LFL|PI|PP|EPT|LCL|LCL2|PA2|GEN|MAE1|EPE1|RBL|BST|THA",
+            "Operation": "EPT:PG|LFL|PI|PP|EPT|LCL|LCL2|PAX|GEN|MAE|EPE1|RBL|BST|THA",
             "Exclusion": null
           },
           {

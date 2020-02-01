@@ -1321,13 +1321,13 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "265",
             "MaximumPerTeam": 0,
-            "Operation": "PB:(PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE|BST|THA)",
+            "Operation": "PB:(PGV|PP|PIV|LFLV|LCL|PAX|GEN|PMV|EPE|BST|THA)",
             "Exclusion": null
           },
           {
             "Id": "267",
             "MaximumPerTeam": 0,
-            "Operation": "EPT:(BO|COL|COGV|COF|COP|BOST|LF|FG|FU|PLA|PGV|PP|PIV|LFLV|LCL|PA2|GEN|PMV|EPE|BST|THA)",
+            "Operation": "EPT:(BO|COL|COGV|COF|COP|BOST|LF|FG|FU|PLA|PGV|PP|PIV|LFLV|LCL|PAX|GEN|PMV|EPE|BST|THA)",
             "Exclusion": null
           },
           {
@@ -1447,7 +1447,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "276",
             "MaximumPerTeam": 0,
-            "Operation": "SPBG&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE))|LCL2)&!(SPBG|COL|COGV|COF|COP|BOST)",
+            "Operation": "SPBG&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PAX|GEN|PMV|EPE)&!(PB|PGV|PP|PIV|LFLV|EPT|PAX|GEN|PMV|EPE))|LCL2)&!(SPBG|COL|COGV|COF|COP|BOST)",
             "Exclusion": null
           },
           {
@@ -1598,7 +1598,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "277",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|RBL|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
+            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PAX|GEN|PMV|EPE|RBL|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
             "Exclusion": null
           }
         ],
@@ -1666,7 +1666,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "285",
             "MaximumPerTeam": 0,
-            "Operation": "EPT&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|BST|THA)&!(PB|PGV|PP|PIV|LFLV|EPT|PA2|GEN|PMV|EPE|BST|THA))|LCL2)&!(BO|COL|COGV|COF|COP|BOST)",
+            "Operation": "EPT&PB:(((PB|PGV|PP|PIV|LFLV|EPT|LCL|PAX|GEN|PMV|EPE|BST|THA)&!(PB|PGV|PP|PIV|LFLV|EPT|PAX|GEN|PMV|EPE|BST|THA))|LCL2)&!(BO|COL|COGV|COF|COP|BOST)",
             "Exclusion": null
           }
         ],
@@ -1734,7 +1734,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "268",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PA2|GEN|PMV|EPE|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
+            "Operation": "PB&EPT:((PB|PGV|PP|PIV|LFLV|EPT|LCL|PAX|GEN|PMV|EPE|BST|THA)&(PB|PGV|PP|PIV|LFLV))|LCL2",
             "Exclusion": null
           },
           {

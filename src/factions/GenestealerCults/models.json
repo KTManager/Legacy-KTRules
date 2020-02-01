@@ -1021,7 +1021,7 @@
           {
             "Id": "127",
             "MaximumPerTeam": 0,
-            "Operation": "FUA&PMI:(PMI|PB|LTL)&(EPT|PIE|MAE1)",
+            "Operation": "FUA&PMI:(PMI|PB|LTL)&(EPT|PIE|MAE)",
             "Exclusion": null
           }
         ],
