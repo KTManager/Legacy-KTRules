@@ -645,7 +645,12 @@
             "WeaponId": "SCF"
           }
         ],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "DST",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": [
           {
             "Level": 1,
