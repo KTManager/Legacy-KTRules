@@ -493,6 +493,14 @@
           {
             "WeaponId": "SFO",
             "Cost": 1
+          },
+          {
+            "WeaponId": "CRM",
+            "Cost": 5
+          },
+          {
+            "WeaponId": "POE",
+            "Cost": 2
           }
         ],
         "LevelCosts": []
@@ -516,7 +524,7 @@
       {
         "Id": "388",
         "MaximumPerTeam": 0,
-        "Operation": "DEVT|CRM|POE",
+        "Operation": "DEV|CRM|POE",
         "Exclusion": null
       }
     ]
@@ -573,7 +581,7 @@
       {
         "Id": "102",
         "MaximumPerTeam": 0,
-        "Operation": "ECO:DEVT|POE",
+        "Operation": "ECO:DEV|POE",
         "Exclusion": null
       },
       {
@@ -632,16 +640,7 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-          {
-            "WeaponId": "SFO",
-            "Cost": 1
-          },
-          {
-            "WeaponId": "BEP",
-            "Cost": 1
-          }
-        ],
+        "CostOverrides": [],
         "LevelCosts": []
       }
     ],
@@ -786,6 +785,10 @@
           {
             "WeaponId": "TOS",
             "Cost": 8
+          },
+          {
+            "WeaponId": "DEV",
+            "Cost": 0
           }
         ],
         "LevelCosts": [
@@ -863,7 +866,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "DEV",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": []
       },
       {
@@ -912,7 +920,12 @@
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [],
+        "CostOverrides": [
+          {
+            "WeaponId": "DEV",
+            "Cost": 0
+          }
+        ],
         "LevelCosts": []
       }
     ],

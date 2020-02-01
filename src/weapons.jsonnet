@@ -1134,7 +1134,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "BEP",
-    "Cost": 2,
+    "Cost": 1,
     "NameEn": "Lash whip and bonesword",
     "NameFr": "Bioknout et épée d'os",
     "NameDe": "Tentakelpeitsche und Hornschwert",
@@ -2586,7 +2586,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "CRM",
-    "Cost": 5,
+    "Cost": 2,
     "NameEn": "Deathspitter",
     "NameFr": "Crache-mort",
     "NameDe": "Säurespucker",
@@ -2946,33 +2946,6 @@ local common = import 'common.libsonnet';
     "WeaponProfiles": [
       {
         "Id": "DEV",
-        "NameEn": "Devourer",
-        "NameFr": "Dévoreur",
-        "NameDe": "Neuralfresser",
-        "DescriptionEn": "",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
-        "Range": 18,
-        "ShotNumber": "3",
-        "Strength": "4",
-        "ArmourPenetration": "0",
-        "Damages": "1",
-        "WeaponTypeId": "A"
-      }
-    ]
-  },
-  {
-    "Id": "DEVT",
-    "Cost": 3,
-    "NameEn": "Devourer",
-    "NameFr": "Dévoreur",
-    "NameDe": "Neuralfresser",
-    "DescriptionEn": "",
-    "DescriptionFr": "",
-    "DescriptionDe": "",
-    "WeaponProfiles": [
-      {
-        "Id": "DEVT",
         "NameEn": "Devourer",
         "NameFr": "Dévoreur",
         "NameDe": "Neuralfresser",
@@ -10028,7 +10001,7 @@ local common = import 'common.libsonnet';
   },
   {
     "Id": "POE",
-    "Cost": 2,
+    "Cost": 0,
     "NameEn": "Spinefists",
     "NameFr": "Poings épineux",
     "NameDe": "Stachelfäuste",
