@@ -11666,5 +11666,32 @@ local common = import 'common.libsonnet';
         "WeaponTypeId": "M"
       }
     ]
+  },
+  {
+    "Id": "AC",
+    "Cost": 3,
+    "NameEn": "Autocannon",
+    "NameFr": "Autocanon",
+    "NameDe": "Maschinenkanone",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "AC",
+        "NameEn": "Autocannon",
+        "NameFr": "Autocanon",
+        "NameDe": "Maschinenkanone",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 48,
+        "ShotNumber": "2",
+        "Strength": "7",
+        "ArmourPenetration": "-1",
+        "Damages": "2",
+        "WeaponType": "L"
+      }
+    ]
   }
 ]
