@@ -2,12 +2,32 @@ name: Build
 
 on: [push, pull_request]
 
+env:
+  RULES_TOOL_BRANCH: develop
+
 jobs:
+
   build-rules:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        rules-version: ['old', 'new']
+
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    
+    - name: Checkout old version (pull request)
+      uses: actions/checkout@v2
+      if: (matrix.rules-version == 'old') && (github.event_name == 'pull_request')
+      with:
+        ref: ${{ github.base_ref }}
+
+    - name: Checkout old version (push)
+      if: (matrix.rules-version == 'old') && (github.event_name == 'push')
+      run: git checkout HEAD^
 
     - name: Set up Python
       uses: actions/setup-python@v1
@@ -26,7 +46,7 @@ jobs:
     - name: Upload results
       uses: actions/upload-artifact@v1
       with:
-        name: rules-out
+        name: rules-out-${{ matrix.rules-version }}
         path: rules-out.tar.gz
   
   rules-tool:
@@ -34,11 +54,16 @@ jobs:
 
     runs-on: windows-latest
 
+    strategy:
+      matrix:
+        rules-version: [ 'old', 'new' ]
+
     steps:
     - name: Check out KTManagerApp
       uses: actions/checkout@v2
       with:
         repository: KTManager/KTManagerApp
+        ref: ${{ env.RULES_TOOL_BRANCH }}
 
     # set up the various build tools
     - name: Setup MSBuild
@@ -52,20 +77,54 @@ jobs:
       with:
         dotnet-version: 2.2.207
 
-    # get the artifact
-    - name: download the rules output
-      uses: actions/download-artifact@v1
-      with:
-        name: rules-out
-
     # Do a rulestool build
     - name: RulesTool Build
       run: |
         nuget restore
-        msbuild KillTeam.RulesTool\KillTeam.RulesTool.csproj /t:Rebuild /p:Configuration=Release
+        msbuild KillTeam.RulesTool\KillTeam.RulesTool.csproj /t:Compile /p:Configuration=Release
     
+    # get the artifact
+    - name: download the rules output
+      uses: actions/download-artifact@v1
+      with:
+        name: rules-out-${{ matrix.rules-version }}
+
     # run rules tool on the rules
     - name: RulesTool Import
       run: |
-        tar -xzvf rules-out/rules-out.tar.gz
+        tar -xzvf rules-out-${{ matrix.rules-version }}/rules-out.tar.gz
         dotnet run --project KillTeam.RulesTool -- import -r .\out
+    
+    - name: Run RulesTool over all the factions
+      run: |
+        dotnet run --project KillTeam.RulesTool -- dump > rt-dump-${{ matrix.rules-version }}.txt
+      continue-on-error: true
+    
+    - name: Upload rules dump
+      uses: actions/upload-artifact@v1
+      with:
+        path: rt-dump-${{ matrix.rules-version }}.txt
+        name: rt-dump-${{ matrix.rules-version }}
+
+  diff-rules:
+    needs: rules-tool
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: fetch old dump
+      uses: actions/download-artifact@v1
+      with:
+        name: rt-dump-old
+    - name: fetch new dump
+      uses: actions/download-artifact@v1
+      with:
+        name: rt-dump-new
+    - name: diff
+      run: diff rt-dump-old/rt-dump-old.txt rt-dump-new/rt-dump-new.txt | tee rt-dump.diff
+      continue-on-error: true
+    - name: upload diff
+      uses: actions/upload-artifact@v1
+      with:
+        path: rt-dump.diff
+        name: diff
