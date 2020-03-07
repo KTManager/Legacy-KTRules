@@ -13,7 +13,9 @@ the JSON from the original db import.
 KT Rules uses semantic versioning: major.minor.patch
 
 **Major Version Change**: Whenever the format of the rules changes such that changes to the app are required, the major version will bump.
+
 **Minor Version Change**: When there are official changes to the rules, FAQ, new Teams, etc. the minor version will be bumped (eg: the Kill Team Annual, adding a new team, etc.)
+
 **Patch Version Change**: Whenever there are minor bug fixes, wording changes, translation fixes, etc. the patch version will bump.
 
 ## Data Model
