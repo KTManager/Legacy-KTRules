@@ -103,7 +103,6 @@ jobs:
     - name: Run RulesTool over all the factions
       run: |
         dotnet run --project KillTeam.RulesTool -- dump > rt-dump-${{ matrix.rules-version }}.txt
-      continue-on-error: true
     
     - name: Upload rules dump
       uses: actions/upload-artifact@v1
