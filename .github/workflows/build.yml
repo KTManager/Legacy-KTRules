@@ -3,23 +3,69 @@ name: Build
 on: [push, pull_request]
 
 jobs:
-  build:
-
+  build-rules:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.6, 3.7, 3.8]
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+
+    - name: Set up Python
       uses: actions/setup-python@v1
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: 3.6
+
+    # Do a rules build
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r ./requirements.txt
     - name: Test by running a build
       run: |
         python ./build.py release clean
+        tar -czvf rules-out.tar.gz out
+    - name: Upload results
+      uses: actions/upload-artifact@v1
+      with:
+        name: rules-out
+        path: rules-out.tar.gz
+  
+  rules-tool:
+    needs: build-rules
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Check out KTManagerApp
+      uses: actions/checkout@v2
+      with:
+        repository: KTManager/KTManagerApp
+
+    # set up the various build tools
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+      with:
+        vs-version: 16.4
+    - name: Setup Nuget
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v1.4.0
+      with:
+        dotnet-version: 2.2.207
+
+    # get the artifact
+    - name: download the rules output
+      uses: actions/download-artifact@v1
+      with:
+        name: rules-out
+
+    # Do a rulestool build
+    - name: RulesTool Build
+      run: |
+        nuget restore
+        msbuild KillTeam.RulesTool\KillTeam.RulesTool.csproj /t:Rebuild /p:Configuration=Release
+    
+    # run rules tool on the rules
+    - name: RulesTool Import
+      run: |
+        tar -xzvf rules-out/rules-out.tar.gz
+        dotnet run --project KillTeam.RulesTool -- import -r .\out
