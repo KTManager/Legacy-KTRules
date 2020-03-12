@@ -11693,5 +11693,43 @@ local common = import 'common.libsonnet';
         "WeaponType": "L"
       }
     ]
+  },
+  {
+    "Id": "SIMP",
+    "Cost": 5,
+    "NameEn": "Simulacrum Imperialis",
+    "NameFr": "",
+    "NameDe": "",
+    "DescriptionEn": 'The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6" of any friendly models with a Simulacrum Imperialis',
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "COD",
+    "Cost": 2,
+    "NameEn": "Condemnor Boltgun",
+    "NameFr": "",
+    "NameDe": "",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "COD",
+        "NameEn": "Condemnor Boltgun",
+        "NameFr": "",
+        "NameDe": "",
+        "DescriptionEn": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 24,
+        "ShotNumber": "1",
+        "Strength": "4",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "R"
+      }
+    ]
   }
 ]

@@ -1,0 +1,13 @@
+[
+    {
+        "Id": "SOF",
+        "ModelId": "BAS",
+        "NameEn": "Shield of Faith",
+        "NameFr": "Shield of Faith",
+        "NameDe": "Shield of Faith",
+        "DescriptionEn": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "DescriptionFr": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "DescriptionDe": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "Details": []
+    }
+]

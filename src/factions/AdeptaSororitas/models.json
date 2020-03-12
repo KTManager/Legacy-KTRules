@@ -1,0 +1,219 @@
+[
+    {
+        "Id": "BAS",
+        "NameEn": "Battle Sister",
+        "NameFe": "",
+        "NameDe": "",
+        "KeywordsEn": "IMPERIUM, INFANTRY, BATTLE SISTER",
+        "KeywordsFr": "",
+        "KeywordsDe": "",
+        "ModelProfiles": [
+            {
+                "Id": "BAS1",
+                "Movement": 6,
+                "WeaponSkill": 4,
+                "BallisticSkill": 3,
+                "Strength": 3,
+                "Toughness": 3,
+                "Wounds": 1,
+                "Attacks": 1,
+                "Leadership": 7,
+                "Save": 3,
+                "MaximumNumber": 0,
+                "Cost": 9,
+                "NameEn": "Battle Sister",
+                "NameFr": "",
+                "NameDe": "",
+                "IsCommander": false,
+                "NumberOfKnownPsychics": 0,
+                "NumberOfPsychicsManifestationPerRound": 0,
+                "NumberOfPsychicsDenialPerRound": 0,
+                "WarGearOptions": [
+                    {
+                        "MaximumPerTeam": "1",
+                        "Operation": "SIMP",
+                        "Exclusion": null
+                    }
+                ],
+                "Specialists": [
+                {
+                    "SpecialistId": "CO"
+                },
+                {
+                    "SpecialistId": "D"
+                },
+                {
+                    "SpecialistId": "M"
+                },
+                {
+                    "SpecialistId": "SN"
+                },
+                {
+                    "SpecialistId": "V"
+                },
+                {
+                    "SpecialistId": "Z"
+                }
+                ],
+                "ModelProfileWeapons": [
+                    {
+                        "WeaponId": "BO"
+                    },
+                    {
+                        "WeaponId": "PB"
+                    },
+                    {
+                        "WeaponId": "GF"
+                    },
+                    {
+                        "WeaponId": "GK"
+                    }
+                ],
+                "CostOverrides": [],
+                "LevelCosts": []
+            },
+            {
+                "Id": "BAS2",
+                "Movement": 6,
+                "WeaponSkill": 4,
+                "BallisticSkill": 3,
+                "Strength": 3,
+                "Toughness": 3,
+                "Wounds": 1,
+                "Attacks": 1,
+                "Leadership": 7,
+                "Save": 3,
+                "MaximumNumber": 2,
+                "Cost": 10,
+                "NameEn": "Battle Sister Gunner",
+                "NameFr": "",
+                "NameDe": "",
+                "IsCommander": false,
+                "NumberOfKnownPsychics": 0,
+                "NumberOfPsychicsManifestationPerRound": 0,
+                "NumberOfPsychicsDenialPerRound": 0,
+                "WarGearOptions": [
+                    {
+                        "MaximumPerTeam": "0",
+                        "Operation": "BO:(LF|FU|BOST|BOL|HFL)",
+                        "Exclusion": null
+                    },
+                    {
+                        "MaximumPerTeam": "0",
+                        "Operation": "EPE|EPT"
+                    }
+                ],
+                "Specialists": [
+                {
+                    "SpecialistId": "CO"
+                },
+                {
+                    "SpecialistId": "D"
+                },
+                {
+                    "SpecialistId": "M"
+                },
+                {
+                    "SpecialistId": "SN"
+                },
+                {
+                    "SpecialistId": "V"
+                },
+                {
+                    "SpecialistId": "Z"
+                },
+                {
+                    "SpecialistId": "AL"
+                }
+                ],
+                "ModelProfileWeapons": [
+                    {
+                        "WeaponId": "BO"
+                    },
+                    {
+                        "WeaponId": "PB"
+                    },
+                    {
+                        "WeaponId": "GF"
+                    },
+                    {
+                        "WeaponId": "GK"
+                    }
+                ],
+                "CostOverrides": [],
+                "LevelCosts": []
+            },
+            {
+                "Id": "BAS3",
+                "Movement": 6,
+                "WeaponSkill": 4,
+                "BallisticSkill": 3,
+                "Strength": 3,
+                "Toughness": 3,
+                "Wounds": 1,
+                "Attacks": 2,
+                "Leadership": 8,
+                "Save": 3,
+                "MaximumNumber": 1,
+                "Cost": 10,
+                "NameEn": "Sister Superior",
+                "NameFr": "",
+                "NameDe": "",
+                "IsCommander": false,
+                "NumberOfKnownPsychics": 0,
+                "NumberOfPsychicsManifestationPerRound": 0,
+                "NumberOfPsychicsDenialPerRound": 0,
+                "WarGearOptions": [
+                    {
+                        "MaximumPerTeam": "0",
+                        "Operation": "BO:(PB|COL|COF|COP|EPT|EPE|COD)",
+                        "Exclusion": null
+                    },
+                    {
+                        "MaximumPerTeam": "0",
+                        "Operation": "PB:PP"
+                    }
+                ],
+                "Specialists": [
+                {
+                    "SpecialistId": "CO"
+                },
+                {
+                    "SpecialistId": "D"
+                },
+                {
+                    "SpecialistId": "M"
+                },
+                {
+                    "SpecialistId": "SN"
+                },
+                {
+                    "SpecialistId": "V"
+                },
+                {
+                    "SpecialistId": "Z"
+                },
+                {
+                    "SpecialistId": "AL"
+                }
+                ],
+                "ModelProfileWeapons": [
+                    {
+                        "WeaponId": "BO"
+                    },
+                    {
+                        "WeaponId": "PB"
+                    },
+                    {
+                        "WeaponId": "GF"
+                    },
+                    {
+                        "WeaponId": "GK"
+                    }
+                ],
+                "CostOverrides": [],
+                "LevelCosts": []
+            }
+        ]
+    }
+]
