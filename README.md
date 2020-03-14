@@ -21,3 +21,8 @@ KT Rules uses semantic versioning: major.minor.patch
 ## Data Model
 
 TODO: describe the data model
+
+## Working Together
+
+Join us on our official Discord : https://discord.gg/G9myjRx 
+We are there to discuss the project and anwser all your technical (or non technical) questions.
