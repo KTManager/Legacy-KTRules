@@ -11698,19 +11698,19 @@ local common = import 'common.libsonnet';
     "Id": "SIMP",
     "Cost": 5,
     "NameEn": "Simulacrum Imperialis",
-    "NameFr": "",
-    "NameDe": "",
-    "DescriptionEn": 'The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6" of any friendly models with a Simulacrum Imperialis',
-    "DescriptionFr": "",
-    "DescriptionDe": "",
+    "NameFr": "Simulacrum Imperialis",
+    "NameDe": "Simulacrum Imperialis",
+    "DescriptionEn": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
+    "DescriptionFr": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
+    "DescriptionDe": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
     "WeaponProfiles": []
   },
   {
     "Id": "COD",
     "Cost": 2,
     "NameEn": "Condemnor Boltgun",
-    "NameFr": "",
-    "NameDe": "",
+    "NameFr": "Condemnor Boltgun",
+    "NameDe": "Condemnor Boltgun",
     "DescriptionEn": "",
     "DescriptionFr": "",
     "DescriptionDe": "",
@@ -11721,14 +11721,68 @@ local common = import 'common.libsonnet';
         "NameFr": "",
         "NameDe": "",
         "DescriptionEn": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
-        "DescriptionFr": "",
-        "DescriptionDe": "",
+        "DescriptionFr": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
+        "DescriptionDe": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
         "Range": 24,
         "ShotNumber": "1",
         "Strength": "4",
         "ArmourPenetration": "0",
         "Damages": "1",
         "WeaponType": "R"
+      }
+    ]
+  },
+  {
+    "Id": "PEVS",
+    "Cost": 0,
+    "NameEn": "Penitent Eviscerator",
+    "NameFr": "Penitent Eviscerator",
+    "NameDe": "Penitent Eviscerator",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PEVS",
+        "NameEn": "Penitent Eviscerator",
+        "NameFr": "Penitent Eviscerator",
+        "NameDe": "Penitent Eviscerator",
+        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionDe": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "x2",
+        "ArmourPenetration": "-3",
+        "Damages": "2",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "ARCOFL",
+    "Cost": 0,
+    "NameEn": "Arco-flails",
+    "NameFr": "Arco-flails",
+    "NameDe": "Arco-flails",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "ARCOFL",
+        "NameEn": "Arco-flails",
+        "NameFr": "Arco-flails",
+        "NameDe": "Arco-flails",
+        "DescriptionEn": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "DescriptionFr": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "DescriptionDe": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "+1",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
+        "WeaponType": "M"
       }
     ]
   }

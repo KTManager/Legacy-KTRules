@@ -34,7 +34,7 @@
     {
         "Id": "ADS3",
         "SpecialistId": null,
-        "ModelProfileId": "FTH",
+        "ModelProfileId": "ARCOF",
         "PhaseId": 5,
         "Aura": false,
         "Commander": false,
@@ -60,38 +60,6 @@
         "DescriptionEn": "Use this Tactic when you pick an Adepta Sororitas model from your kill team to shoot with a flamer. You can re-roll the dice to determine the number of attacks made by this model's flamer, until the end of the phase.",
         "DescriptionFr": "Use this Tactic when you pick an Adepta Sororitas model from your kill team to shoot with a flamer. You can re-roll the dice to determine the number of attacks made by this model's flamer, until the end of the phase.",
         "DescriptionDe": "Use this Tactic when you pick an Adepta Sororitas model from your kill team to shoot with a flamer. You can re-roll the dice to determine the number of attacks made by this model's flamer, until the end of the phase.",
-        "Level": 0,
-        "Cost": 1
-    },
-    {
-        "Id": "ADS5",
-        "SpecialistId": null,
-        "ModelProfileId": "ASCAN",
-        "PhaseId": 5,
-        "Aura": false,
-        "Commander": false,
-        "NameEn": "Lead the Righteous",
-        "NameFr": "Lead the Righteous",
-        "NameDe": "Lead the Righteous",
-        "DescriptionEn": "Use this Tactic at the start of the Shooting phase if your kill team includes a Canoness. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can reroll hit rolls of 1 for friendly models within 6\" of this model.",
-        "DescriptionFr": "Use this Tactic at the start of the Shooting phase if your kill team includes a Canoness. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can reroll hit rolls of 1 for friendly models within 6\" of this model.",
-        "DescriptionDe": "Use this Tactic at the start of the Shooting phase if your kill team includes a Canoness. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can reroll hit rolls of 1 for friendly models within 6\" of this model.",
-        "Level": 0,
-        "Cost": 1
-    },
-    {
-        "Id": "ADS6",
-        "SpecialistId": null,
-        "ModelProfileId": "REPS",
-        "PhaseId": 4,
-        "Aura": false,
-        "Commander": false,
-        "NameEn": "Fervent Whipping",
-        "NameFr": "Fervent Whipping",
-        "NameDe": "Fervent Whipping",
-        "DescriptionEn": "Use this Tactic at the start of the Shooting phase if your kill team includes a Repentia Superior. That model gains the following aura ability until the end of the battle round: As long this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly Sister Repentia models that are within 6\" of this model.",
-        "DescriptionFr": "Use this Tactic at the start of the Shooting phase if your kill team includes a Repentia Superior. That model gains the following aura ability until the end of the battle round: As long this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly Sister Repentia models that are within 6\" of this model.",
-        "DescriptionDe": "Use this Tactic at the start of the Shooting phase if your kill team includes a Repentia Superior. That model gains the following aura ability until the end of the battle round: As long this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly Sister Repentia models that are within 6\" of this model.",
         "Level": 0,
         "Cost": 1
     }

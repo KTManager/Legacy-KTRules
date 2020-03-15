@@ -2,11 +2,11 @@
     {
         "Id": "BAS",
         "NameEn": "Battle Sister",
-        "NameFe": "",
-        "NameDe": "",
+        "NameFe": "Battle Sister",
+        "NameDe": "Battle Sister",
         "KeywordsEn": "IMPERIUM, INFANTRY, BATTLE SISTER",
-        "KeywordsFr": "",
-        "KeywordsDe": "",
+        "KeywordsFr": "IMPERIUM, INFANTRY, BATTLE SISTER",
+        "KeywordsDe": "IMPERIUM, INFANTRY, BATTLE SISTER",
         "ModelProfiles": [
             {
                 "Id": "BAS1",
@@ -97,10 +97,6 @@
                         "MaximumPerTeam": "0",
                         "Operation": "BO:(LF|FU|BOST|BOL|HFL)",
                         "Exclusion": null
-                    },
-                    {
-                        "MaximumPerTeam": "0",
-                        "Operation": "EPE|EPT"
                     }
                 ],
                 "Specialists": [
@@ -172,6 +168,10 @@
                     {
                         "MaximumPerTeam": "0",
                         "Operation": "PB:PP"
+                    },
+                    {
+                        "MaximumPerTeam": "0",
+                        "Operation": "EPE|EPT"
                     }
                 ],
                 "Specialists": [
@@ -215,5 +215,138 @@
                 "LevelCosts": []
             }
         ]
+    },
+    {
+        "Id": "SISR",
+        "NameEn": "Sister Repentia",
+        "NameFe": "Sister Repentia",
+        "NameDe": "Sister Repentia",
+        "KeywordsEn": "IMPERIUM, INFANTRY, SISTER REPENTIA",
+        "KeywordsFr": "IMPERIUM, INFANTRY, SISTER REPENTIA",
+        "KeywordsDe": "IMPERIUM, INFANTRY, SISTER REPENTIA",
+        "ModelProfiles": [
+            {
+              "Id": "SISR",
+              "Movement": 6,
+              "WeaponSkill": 3,
+              "BallisticSkill": 3,
+              "Strength": 3,
+              "Toughness": 3,
+              "Wounds": 1,
+              "Attacks": 2,
+              "Leadership": 8,
+              "Save": 7,
+              "MaximumNumber": 1,
+              "Cost": 13,
+              "NameEn": "Sister Repentia",
+              "NameFr": "Sister Repentia",
+              "NameDe": "Sister Repentia",
+              "IsCommander": false,
+              "NumberOfKnownPsychics": 0,
+              "NumberOfPsychicsManifestationPerRound": 0,
+              "NumberOfPsychicsDenialPerRound": 0,
+              "WarGearOptions": [],
+              "Specialists": [
+                {
+                  "SpecialistId": "L"
+                },
+                {
+                  "SpecialistId": "CB"
+                },
+                {
+                  "SpecialistId": "V"
+                },
+                {
+                  "SpecialistId": "Z"
+                }
+              ],
+              "ModelProfileWeapons": [],
+              "CostOverrides": [],
+              "LevelCosts": []
+            }
+          ],
+          "ModelWeapons": [
+            {
+              "WeaponId": "PEVS"
+            }
+          ],
+          "WarGearOptions": []
+    },
+    {
+        "Id": "ARCOF",
+        "NameEn": "Arco-Flagellant",
+        "NameFe": "Arco-Flagellant",
+        "NameDe": "Arco-Flagellant",
+        "KeywordsEn": "IMPERIUM, INFANTRY, ARCO-FLAGELLANT",
+        "KeywordsFr": "IMPERIUM, INFANTRY, ARCO-FLAGELLANT",
+        "KeywordsDe": "IMPERIUM, INFANTRY, ARCO-FLAGELLANT",
+        "ModelProfiles": [
+            {
+              "Id": "ARCOF",
+              "Movement": 7,
+              "WeaponSkill": 4,
+              "BallisticSkill": 0,
+              "Strength": 4,
+              "Toughness": 3,
+              "Wounds": 2,
+              "Attacks": 2,
+              "Leadership": 7,
+              "Save": 7,
+              "MaximumNumber": 0,
+              "Cost": 13,
+              "NameEn": "Arco-Flagellant",
+              "NameFr": "Arco-Flagellant",
+              "NameDe": "Arco-Flagellant",
+              "IsCommander": false,
+              "NumberOfKnownPsychics": 0,
+              "NumberOfPsychicsManifestationPerRound": 0,
+              "NumberOfPsychicsDenialPerRound": 0,
+              "WarGearOptions": [],
+              "Specialists": [
+                {
+                  "SpecialistId": "Z"
+                }
+              ],
+              "ModelProfileWeapons": [],
+              "CostOverrides": [],
+              "LevelCosts": []
+            },
+            {
+                "Id": "END",
+                "Movement": 7,
+                "WeaponSkill": 4,
+                "BallisticSkill": 0,
+                "Strength": 4,
+                "Toughness": 3,
+                "Wounds": 2,
+                "Attacks": 3,
+                "Leadership": 7,
+                "Save": 7,
+                "MaximumNumber": 1,
+                "Cost": 14,
+                "NameEn": "Endurant",
+                "NameFr": "Endurant",
+                "NameDe": "Endurant",
+                "IsCommander": false,
+                "NumberOfKnownPsychics": 0,
+                "NumberOfPsychicsManifestationPerRound": 0,
+                "NumberOfPsychicsDenialPerRound": 0,
+                "WarGearOptions": [],
+                "Specialists": [
+                    {
+                    "SpecialistId": "Z"
+                    }
+                ],
+                "ModelProfileWeapons": [],
+                "CostOverrides": [],
+                "LevelCosts": []
+            }
+          ],
+          "ModelWeapons": [
+            {
+              "WeaponId": "ARCOFL"
+            }
+          ],
+          "WarGearOptions": []
     }
 ]

@@ -9,5 +9,49 @@
         "DescriptionFr": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
         "DescriptionDe": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
         "Details": []
+    },
+    {
+        "Id": "SRZ",
+        "ModelId": "SISR",
+        "NameEn": "Zealot",
+        "NameFr": "Zealot",
+        "NameDe": "Zealot",
+        "DescriptionEn": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "DescriptionFr": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "DescriptionDe": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "Details":[] 
+    },
+    {
+        "Id": "SOLA",
+        "ModelId": "SISR",
+        "NameEn": "Solace in Anguish",
+        "NameFr": "Solace in Anguish",
+        "NameDe": "Solace in Anguish",
+        "DescriptionEn": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound.",
+        "DescriptionFr": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound.",
+        "DescriptionDe": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound.",
+        "Details":[] 
+    },
+    {
+        "Id": "AFZ",
+        "ModelId": "ARCOF",
+        "NameEn": "Zealot",
+        "NameFr": "Zealot",
+        "NameDe": "Zealot",
+        "DescriptionEn": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "DescriptionFr": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "DescriptionDe": "You can re-roll hit rolls for attacks made with melee weapons by a model with this ability in any battle round in which it charged or was charged",
+        "Details":[] 
+    },
+    {
+        "Id": "BKM",
+        "ModelId": "ARCOF",
+        "NameEn": "Berzerk Killing Machine",
+        "NameFr": "Berzerk Killing Machine",
+        "NameDe": "Berzerk Killing Machine",
+        "DescriptionEn": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound",
+        "DescriptionFr": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound",
+        "DescriptionDe": "Each time a model with this ability loses a wound, roll a D6; on a 5+ the model does not lose that wound",
+        "Details": []
     }
 ]
