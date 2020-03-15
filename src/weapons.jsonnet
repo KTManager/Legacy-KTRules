@@ -11785,5 +11785,113 @@ local common = import 'common.libsonnet';
         "WeaponType": "M"
       }
     ]
+  },
+  {
+    "Id": "BLESSB",
+    "Cost": 6,
+    "NameEn": "Blessed Blade",
+    "NameFr": "Blessed Blade",
+    "NameDe": "Blessed Blade",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "BLESSB",
+        "NameEn": "Blessed Blade",
+        "NameFr": "Blessed Blade",
+        "NameDe": "Blessed Blade",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "+2",
+        "ArmourPenetration": "-3",
+        "Damages": "D3",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "BRAZ",
+    "Cost": 5,
+    "NameEn": "Brazier of Holy Fire",
+    "NameFr": "Brazier of Holy Fire",
+    "NameDe": "Brazier of Holy Fire",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "BRAZ",
+        "NameEn": "Brazier of Holy Fire",
+        "NameFr": "Brazier of Holy Fire",
+        "NameDe": "Brazier of Holy Fire",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "NULR",
+    "Cost": 3,
+    "NameEn": "Null Rod",
+    "NameFr": "Null Rod",
+    "NameDe": "Null Rod",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "NULR",
+        "NameEn": "Null Rod",
+        "NameFr": "Null Rod",
+        "NameDe": "Null Rod",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "RODO",
+    "Cost": 2,
+    "NameEn": "Rod of Office",
+    "NameFr": "Rod of Office",
+    "NameDe": "Rod of Office",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "RODO",
+        "NameEn": "Rod of Office",
+        "NameFr": "Rod of Office",
+        "NameDe": "Rod of Office",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
   }
 ]

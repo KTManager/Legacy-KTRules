@@ -348,5 +348,118 @@
             }
           ],
           "WarGearOptions": []
+    },
+    {
+        "Id": "CANO",
+        "NameEn": "Canoness",
+        "NameFe": "Canoness",
+        "NameDe": "Canoness",
+        "KeywordsEn": "IMPERIUM, COMMANDER, INFANTRY, CANONESS",
+        "KeywordsFr": "IMPERIUM, COMMANDER, INFANTRY, CANONESS",
+        "KeywordsDe": "IMPERIUM, COMMANDER, INFANTRY, CANONESS",
+        "ModelProfiles": [
+            {
+              "Id": "CANO",
+              "Movement": 6,
+              "WeaponSkill": 2,
+              "BallisticSkill": 2,
+              "Strength": 3,
+              "Toughness": 3,
+              "Wounds": 5,
+              "Attacks": 4,
+              "Leadership": 9,
+              "Save": 3,
+              "MaximumNumber": 1,
+              "Cost": 13,
+              "NameEn": "Canoness",
+              "NameFr": "Canoness",
+              "NameDe": "Canoness",
+              "IsCommander": true,
+              "NumberOfKnownPsychics": 0,
+              "NumberOfPsychicsManifestationPerRound": 0,
+              "NumberOfPsychicsDenialPerRound": 0,
+              "WarGearOptions": [
+                {
+                    "MaximumPerTeam": "0",
+                    "Operation": "PB:(COD|LFL|PP|PI)",
+                    "Exclusion": null
+                },
+                {
+                    "MaximumPerTeam": "0",
+                    "Operation": "EPT:EPE|BLESSB|(EPT&BRAZ)|(EPT&NULR)",
+                    "Exclusion": null
+                },
+                {
+                    "MaximumPerTeam": "0",
+                    "Operation": "PB&EPT:(BO&EPE&RODO)"
+                }
+              ],
+              "Specialists": [
+                {
+                  "SpecialistId": "FR"
+                },
+                {
+                  "SpecialistId": "FE"
+                },
+                {
+                  "SpecialistId": "LE"
+                },
+                {
+                  "SpecialistId": "LO"
+                },
+                {
+                  "SpecialistId": "ME"
+                },
+                {
+                  "SpecialistId": "SH"
+                },
+                {
+                  "SpecialistId": "ST"
+                },
+                {
+                  "SpecialistId": "F"
+                }
+              ],
+              "ModelProfileWeapons": [],
+              "CostOverrides": [
+                {
+                  "WeaponId": "EPE",
+                  "Cost": 2
+                }
+              ],
+              "LevelCosts": [
+                {
+                  "Level": 1,
+                  "Cost": 40
+                },
+                {
+                  "Level": 2,
+                  "Cost": 50
+                },
+                {
+                  "Level": 3,
+                  "Cost": 65
+                },
+                {
+                  "Level": 4,
+                  "Cost": 80
+                }]
+            }
+          ],
+          "ModelWeapons": [
+            {
+                "WeaponId": "PB"
+            },
+            {
+                "WeaponId": "EPT"
+            },
+            {
+                "WeaponId": "GF"
+            },
+            {
+                "WeaponId": "GK"
+            }
+          ],
+          "WarGearOptions": []
     }
 ]
