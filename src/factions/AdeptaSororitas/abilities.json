@@ -33,6 +33,17 @@
         "Details": []
     },
     {
+        "Id": "SOFRS",
+        "ModelId": "REPS",
+        "NameEn": "Shield of Faith",
+        "NameFr": "Shield of Faith",
+        "NameDe": "Shield of Faith",
+        "DescriptionEn": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "DescriptionFr": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "DescriptionDe": "Models with this ability have a 6+ invulnerable save. In addition, models with this ability can attempt to deny one psychic power in each Psychic phase in the same manner as a Psyker. When making this attempt, roll one D6 instead of 2D6; the psychic power is resisted if the roll is greater than the result of the Psychic test that manifested the power.",
+        "Details": []
+    },
+    {
         "Id": "SRZ",
         "ModelId": "SISR",
         "NameEn": "Zealot",
@@ -118,6 +129,17 @@
         "DescriptionEn": "If this model has a rod of office, add 3\" to the range of its aura abilities.",
         "DescriptionFr": "If this model has a rod of office, add 3\" to the range of its aura abilities.",
         "DescriptionDe": "If this model has a rod of office, add 3\" to the range of its aura abilities.",
+        "Details": []
+    },
+    {
+        "Id": "DRIO",
+        "ModelId": "REPS",
+        "NameEn": "Driven Onwards",
+        "NameFr": "Driven Onwards",
+        "NameDe": "Driven Onwards",
+        "DescriptionEn": "You can re-roll Advance and charge rolls for friendly SISTER REPENTIA models that are within 6\" of this model when the dice are rolled. In addition, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
+        "DescriptionFr": "You can re-roll Advance and charge rolls for friendly SISTER REPENTIA models that are within 6\" of this model when the dice are rolled. In addition, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
+        "DescriptionDe": "You can re-roll Advance and charge rolls for friendly SISTER REPENTIA models that are within 6\" of this model when the dice are rolled. In addition, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
         "Details": []
     }
 ]
