@@ -38,7 +38,7 @@ local utils = import '../../utils.libsonnet';
                     }
                 ],
                 "Specialists": utils.Specialists(["CO", "D", "M", "SN", "V", "Z"]),
-                "ModelProfileWeapons": utils.Ids("WeaponId", ["BO", "PB", "GF", "GK"]),
+                "ModelProfileWeapons": utils.Ids("Weapon", ["BO", "PB", "GF", "GK"]),
                 "CostOverrides": [],
                 "LevelCosts": []
             },
@@ -70,7 +70,7 @@ local utils = import '../../utils.libsonnet';
                     }
                 ],
                 "Specialists": utils.Specialists(["CO", "D", "M", "SN", "V", "Z", "AL"]),
-                "ModelProfileWeapons": utils.Ids("WeaponId", ["BO", "PB", "GF", "GK"]),
+                "ModelProfileWeapons": utils.Ids("Weapon", ["BO", "PB", "GF", "GK"]),
                 "CostOverrides": [],
                 "LevelCosts": []
             },
@@ -110,7 +110,7 @@ local utils = import '../../utils.libsonnet';
                     }
                 ],
                 "Specialists": utils.Specialists(["CO", "D", "M", "SN", "V", "Z", "AL"]),
-                "ModelProfileWeapons": utils.Ids("WeaponId", ["BO", "PB", "GF", "GK"]),
+                "ModelProfileWeapons": utils.Ids("Weapon", ["BO", "PB", "GF", "GK"]),
                 "CostOverrides": [],
                 "LevelCosts": []
             }
