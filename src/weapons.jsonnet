@@ -3437,10 +3437,26 @@ local common = import 'common.libsonnet';
     "NameEn": "Disc of Tzeentch",
     "NameFr": "Disc of Tzeentch",
     "NameDe": "Disc of Tzeentch",
-    "DescriptionEn": "This model loses the Infantry keyword, gains the Daemon, Cavalry and Fly keywords, his Move characteristic is increased to 12\" and his disc will atack his ennemies with its blades when he fights.",
+    "DescriptionEn": "This model loses the Infantry keyword, gains the Daemon, Cavalry and Fly keywords, his Move characteristic is increased to 12\" and his disc will attack his enemies with its blades when he fights.",
     "DescriptionFr": "Cette figurine perd le mot-clé Infanterie et gagne les mots-clés Daemon, Cavalerie et Vol, son mouvement passe à 12\" et son Disc attaquera l'ennemi au combat.",
     "DescriptionDe": "Dieses Modell verliert das Schlüsselwort INFANTERIE und erhält die Schlüsselwörter DAEMON, KAVALLERIE und FLIEGEN, sein Bewegungswert wird auf 12\" erhöht und seine Disc attackiert seine Feinde mit ihren Klingen, wenn er kämpft.",
-    "WeaponProfiles": []
+    "WeaponProfiles": [
+      {
+        "Id": "DST",
+        "NameEn": "Blades",
+        "NameFr": "Lames",
+        "NameDe": "Klingen",
+        "DescriptionEn": "After a model on this mount makes its close combat attacks, you can attack with its mount. Make 1 additional attack, using this weapon profile.",
+        "DescriptionFr": "After a model on this mount makes its close combat attacks, you can attack with its mount. Make 1 additional attack, using this weapon profile.",
+        "DescriptionDe": "After a model on this mount makes its close combat attacks, you can attack with its mount. Make 1 additional attack, using this weapon profile.",
+        "Range": 0,
+        "ShotNumber": "1",
+        "Strength": "4",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponTypeId": "M"
+      }
+    ]
   },
   {
     "Id": "DSTIG",
