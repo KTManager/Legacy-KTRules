@@ -62,7 +62,7 @@ dotnet run --project KillTeam.RulesTool -- cost GK --all
 
 When you're ready to apply changes to KTManagerApp, make sure that version.txt is correct (see version number above) and checked in, then:
 
-```
+```bash
 # build the rules
 ./build.py clean release
 
