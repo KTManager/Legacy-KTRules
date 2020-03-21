@@ -1,6 +1,7 @@
 
 .vscode
 out
+env
 
 # Some defaults:
 

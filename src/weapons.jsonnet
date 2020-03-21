@@ -11709,5 +11709,205 @@ local common = import 'common.libsonnet';
         "WeaponType": "L"
       }
     ]
+  },
+  {
+    "Id": "SIMP",
+    "Cost": 5,
+    "NameEn": "Simulacrum Imperialis",
+    "NameFr": "Simulacrum Imperialis",
+    "NameDe": "Simulacrum Imperialis",
+    "DescriptionEn": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
+    "DescriptionFr": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
+    "DescriptionDe": "The Shield of Faith ability grants a 5+ invulnerable save instead of a 6+ to models from your kill team, whilst they are within 6\" of any friendly models with a Simulacrum Imperialis",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "COD",
+    "Cost": 2,
+    "NameEn": "Condemnor Boltgun",
+    "NameFr": "Condemnor Boltgun",
+    "NameDe": "Condemnor Boltgun",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "COD",
+        "NameEn": "Condemnor Boltgun",
+        "NameFr": "",
+        "NameDe": "",
+        "DescriptionEn": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
+        "DescriptionFr": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
+        "DescriptionDe": "When resolving an attack made with this weapon against a Psyker, this weapon has a Damage characteristic of D3",
+        "Range": 24,
+        "ShotNumber": "1",
+        "Strength": "4",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "R"
+      }
+    ]
+  },
+  {
+    "Id": "PEVS",
+    "Cost": 0,
+    "NameEn": "Penitent Eviscerator",
+    "NameFr": "Penitent Eviscerator",
+    "NameDe": "Penitent Eviscerator",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PEVS",
+        "NameEn": "Penitent Eviscerator",
+        "NameFr": "Penitent Eviscerator",
+        "NameDe": "Penitent Eviscerator",
+        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionDe": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "x2",
+        "ArmourPenetration": "-3",
+        "Damages": "2",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "ARCOFL",
+    "Cost": 0,
+    "NameEn": "Arco-flails",
+    "NameFr": "Arco-flails",
+    "NameDe": "Arco-flails",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "ARCOFL",
+        "NameEn": "Arco-flails",
+        "NameFr": "Arco-flails",
+        "NameDe": "Arco-flails",
+        "DescriptionEn": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "DescriptionFr": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "DescriptionDe": "Make D3 hit rolls for each attack made with this weapon, instead of 1.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "+1",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "BLESSB",
+    "Cost": 6,
+    "NameEn": "Blessed Blade",
+    "NameFr": "Blessed Blade",
+    "NameDe": "Blessed Blade",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "BLESSB",
+        "NameEn": "Blessed Blade",
+        "NameFr": "Blessed Blade",
+        "NameDe": "Blessed Blade",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "+2",
+        "ArmourPenetration": "-3",
+        "Damages": "D3",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "BRAZ",
+    "Cost": 5,
+    "NameEn": "Brazier of Holy Fire",
+    "NameFr": "Brazier of Holy Fire",
+    "NameDe": "Brazier of Holy Fire",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "BRAZ",
+        "NameEn": "Brazier of Holy Fire",
+        "NameFr": "Brazier of Holy Fire",
+        "NameDe": "Brazier of Holy Fire",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "NULR",
+    "Cost": 3,
+    "NameEn": "Null Rod",
+    "NameFr": "Null Rod",
+    "NameDe": "Null Rod",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "NULR",
+        "NameEn": "Null Rod",
+        "NameFr": "Null Rod",
+        "NameDe": "Null Rod",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "RODO",
+    "Cost": 2,
+    "NameEn": "Rod of Office",
+    "NameFr": "Rod of Office",
+    "NameDe": "Rod of Office",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "RODO",
+        "NameEn": "Rod of Office",
+        "NameFr": "Rod of Office",
+        "NameDe": "Rod of Office",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
   }
 ]
