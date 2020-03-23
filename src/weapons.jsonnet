@@ -11706,7 +11706,7 @@ local common = import 'common.libsonnet';
         "Strength": "7",
         "ArmourPenetration": "-1",
         "Damages": "2",
-        "WeaponType": "L"
+        "WeaponTypeId": "L"
       }
     ]
   },
