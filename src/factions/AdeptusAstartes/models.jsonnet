@@ -45,7 +45,12 @@ local utils = import '../../utils.libsonnet';
         "NumberOfKnownPsychics": 0,
         "NumberOfPsychicsManifestationPerRound": 0,
         "NumberOfPsychicsDenialPerRound": 0,
-        "WarGearOptions": [],
+        "WarGearOptions": [
+          {
+            "MaximumPerTeam": 0,
+            "Operation": "BSNR:LAF"
+          }
+        ],
         "Specialists": [
           {
             "SpecialistId": "CO"
@@ -63,7 +68,11 @@ local utils = import '../../utils.libsonnet';
             "SpecialistId": "V"
           }
         ],
-        "ModelProfileWeapons": [],
+        "ModelProfileWeapons": [
+          {
+            "WeaponId": "BSNR"
+          }
+        ],
         "CostOverrides": [],
         "LevelCosts": []
       },
@@ -87,7 +96,12 @@ local utils = import '../../utils.libsonnet';
         "NumberOfKnownPsychics": 0,
         "NumberOfPsychicsManifestationPerRound": 0,
         "NumberOfPsychicsDenialPerRound": 0,
-        "WarGearOptions": [],
+        "WarGearOptions": [
+          {
+            "MaximumPerTeam": 0,
+            "Operation": "BSNR:IBC|LAF"
+          }
+        ],
         "Specialists": [
           {
             "SpecialistId": "CO"
@@ -108,15 +122,16 @@ local utils = import '../../utils.libsonnet';
             "SpecialistId": "V"
           }
         ],
-        "ModelProfileWeapons": [],
+        "ModelProfileWeapons": [
+          {
+            "WeaponId": "BSNR"
+          }
+        ],
         "CostOverrides": [],
         "LevelCosts": []
       }
     ],
     "ModelWeapons": [
-      {
-        "WeaponId": "BSNR"
-      },
       {
         "WeaponId": "GF"
       },
@@ -256,7 +271,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "14",
             "MaximumPerTeam": 0,
-            "Operation": "EPE|EPT",
+            "Operation": "EPE|EPT|THA|GEN",
             "Exclusion": "AAI3"
           },
           {
@@ -310,12 +325,6 @@ local utils = import '../../utils.libsonnet';
         "Id": "12",
         "MaximumPerTeam": 0,
         "Operation": "FBO:FBA|FBS",
-        "Exclusion": null
-      },
-      {
-        "Id": "149",
-        "MaximumPerTeam": 1,
-        "Operation": "AUS",
         "Exclusion": null
       }
     ]
@@ -1231,7 +1240,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "7",
             "MaximumPerTeam": 0,
-            "Operation": "PB&BO:(PB|BO|PP|PG)&(EPT|EPE|GEN|AUS)",
+            "Operation": "PB&BO:(PB|BO|PP|PG)&(EPT|EPE|GEN)",
             "Exclusion": null
           }
         ],
@@ -1334,6 +1343,11 @@ local utils = import '../../utils.libsonnet';
             "Id": "391",
             "MaximumPerTeam": 0,
             "Operation": "PB&EPT:LCL2",
+            "Exclusion": null
+          },
+          {
+            "MaximumPerTeam": 0,
+            "Operation": "JPKSW",
             "Exclusion": null
           }
         ],
@@ -1747,6 +1761,11 @@ local utils = import '../../utils.libsonnet';
             "Id": "274",
             "MaximumPerTeam": 1,
             "Operation": "MEBO",
+            "Exclusion": null
+          },
+          {
+            "MaximumPerTeam": 0,
+            "Operation": "JP",
             "Exclusion": null
           }
         ],
