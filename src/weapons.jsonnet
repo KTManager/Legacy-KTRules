@@ -1427,14 +1427,14 @@ local common = import 'common.libsonnet';
         "NameEn": "Executioner round",
         "NameFr": "Munitions Exécutrices",
         "NameDe": "Henkergeschoss",
-        "DescriptionEn": "If you make a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.",
-        "DescriptionFr": "Si vous obtenez un jet de blessure de 6+ avec cette arme, elle inflige une blessure mortelle en plus des dégâts normaux",
-        "DescriptionDe": "Bei einem Verwundungswurf von 6+ für diese Waffe verursacht sie eine tödliche Verwundung zusätzlich zum normalen Schaden.",
+        "DescriptionEn": "Add 2 to hit rolls made for this weapon. In addition, this weapon can target models that are not visible to the bearer. If the target is not visible to the bearer, a 6 is required for a successful hit roll, irrespective of the firing model’s Ballistic Skill or any modifiers.",
+        "DescriptionFr": "Ajoutez 2 aux jets de touche de cette arme. Cette arme peut viser des cibles invisibles du tireur.  Dans ce cas, le jet de touche nécessaire est 6., quels que soient la CT du tireur et les modificateurs",
+        "DescriptionDe": "Addiere 2 auf Trefferwürfe für diese Waffe. Zusätzlich kann diese Waffe Modelle als Ziel wählen, die für den Träger  nicht sichtbar sind. Ist das Ziel für den Träger nicht sichtbar, ist eine 6 für einen erfolgreichen Trefferwurf nötig unabhängig von der Ballistischen Fertigkeit des Trägers oder anderen Modifikatoren.",
         "Range": 36,
         "ShotNumber": "1",
-        "Strength": "4",
-        "ArmourPenetration": "-2",
-        "Damages": "D3",
+        "Strength": "5",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
         "WeaponTypeId": "L"
       },
       {
@@ -1442,14 +1442,14 @@ local common = import 'common.libsonnet';
         "NameEn": "Mortis round",
         "NameFr": "Munitions Mortis",
         "NameDe": "Mortis-Geschoss",
-        "DescriptionEn": "Add 2 to hit rolls made for this weapon. In addition, this weapon can target models that are not visible to the bearer. If the target is not visible to the bearer, a 6 is required for a successful hit roll, irrespective of the firing model’s Ballistic Skill or any modifiers.",
-        "DescriptionFr": "Ajoutez 2 aux jets de touche de cette arme. Cette arme peut viser des cibles invisibles du tireur.  Dans ce cas, le jet de touche nécessaire est 6., quels que soient la CT du tireur et les modificateurs",
-        "DescriptionDe": "Addiere 2 auf Trefferwürfe für diese Waffe. Zusätzlich kann diese Waffe Modelle als Ziel wählen, die für den Träger  nicht sichtbar sind. Ist das Ziel für den Träger nicht sichtbar, ist eine 6 für einen erfolgreichen Trefferwurf nötig unabhängig von der Ballistischen Fertigkeit des Trägers oder anderen Modifikatoren.",
+        "DescriptionEn": "If you make a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.",
+        "DescriptionFr": "Si vous obtenez un jet de blessure de 6+ avec cette arme, elle inflige une blessure mortelle en plus des dégâts normaux",
+        "DescriptionDe": "Bei einem Verwundungswurf von 6+ für diese Waffe verursacht sie eine tödliche Verwundung zusätzlich zum normalen Schaden.",
         "Range": 36,
         "ShotNumber": "1",
-        "Strength": "4",
-        "ArmourPenetration": "-1",
-        "Damages": "1",
+        "Strength": "5",
+        "ArmourPenetration": "-2",
+        "Damages": "D3",
         "WeaponTypeId": "L"
       },
       {
@@ -1462,7 +1462,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 36,
         "ShotNumber": "D3",
-        "Strength": "4",
+        "Strength": "5",
         "ArmourPenetration": "0",
         "Damages": "1",
         "WeaponTypeId": "L"
@@ -6824,6 +6824,17 @@ local common = import 'common.libsonnet';
     "WeaponProfiles": []
   },
   {
+    "Id": "JPKSW",
+    "Cost": 6,
+    "NameEn": "Jump pack (SPACE WOLVES only)",
+    "NameFr": "Réacteur dorsal (SPACE WOLVES only)",
+    "NameDe": "Sprungmodul (SPACE WOLVES only)",
+    "DescriptionEn": "Move characteristic is increased to 12\" and gain the JUMP PACK and FLY keywords.",
+    "DescriptionFr": "Son Mouvement passe à 12\" et il gagne les mots-clés RÉACTEUR DORSAL et VOL",
+    "DescriptionDe": "Der Bewegungswert dieses Modells wird auf 12'' erhöht und es erhält die Schlüsselwörter SPRUNGMODUL und FLIEGEN.",
+    "WeaponProfiles": []
+  },
+  {
     "Id": "KAL",
     "Cost": 0,
     "NameEn": "Slugga",
@@ -8305,6 +8316,60 @@ local common = import 'common.libsonnet';
         "Strength": "4",
         "ArmourPenetration": "-2",
         "Damages": "2",
+        "WeaponTypeId": "L"
+      }
+    ]
+  },
+  {
+    "Id": "IBC",
+    "Cost": 0,
+    "NameEn": "Instigator bolt carbine",
+    "NameFr": "Carabine bolter Instigator",
+    "NameDe": "Anstifter-Boltkarabiner",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "IBC",
+        "NameEn": "Instigator bolt carabine",
+        "NameFr": "Carabine bolter Instigator de maître",
+        "NameDe": "Meisterhafter Anstifter-Boltkarabiner",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 24,
+        "ShotNumber": "1",
+        "Strength": "4",
+        "ArmourPenetration": "-1",
+        "Damages": "2",
+        "WeaponTypeId": "A"
+      }
+    ]
+  },
+  {
+    "Id": "LAF",
+    "Cost": 5,
+    "NameEn": "Las fusil",
+    "NameFr": "Las fusil",
+    "NameDe": "Las fusil",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "LAF",
+        "NameEn": "Las fusil",
+        "NameFr": "Las fusil",
+        "NameDe": "Las fusil",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 36,
+        "ShotNumber": "1",
+        "Strength": "8",
+        "ArmourPenetration": "-3",
+        "Damages": "3",
         "WeaponTypeId": "L"
       }
     ]
