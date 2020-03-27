@@ -11914,7 +11914,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11941,7 +11941,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11968,9 +11968,36 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
-        "ArmourPenetration": "0",
-        "Damages": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-2",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "NWHPS",
+    "Cost": 0,
+    "NameEn": "Neural Whips",
+    "NameFr": "Neural Whips",
+    "NameDe": "Neural Whips",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "NWHPS",
+        "NameEn": "Neural Whips",
+        "NameFr": "Neural Whips",
+        "NameDe": "Neural Whips",
+        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionDe": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-2",
+        "Damages": "1",
         "WeaponType": "M"
       }
     ]
