@@ -12121,5 +12121,54 @@ local common = import 'common.libsonnet';
     "DescriptionFr": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
     "DescriptionDe": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
     "WeaponProfiles": []
+  },
+  {
+    "Id": "PSW",
+    "Cost": 0,
+    "NameEn": "Plaguesword",
+    "NameFr": "Plaguesword",
+    "NameDe": "Plaguesword",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PSW",
+        "NameEn": "Plaguesword",
+        "NameFr": "Plaguesword",
+        "NameDe": "Plaguesword",
+        "DescriptionEn": "You can re-roll wound rolls of 1 for this weapon.",
+        "DescriptionFr": "You can re-roll wound rolls of 1 for this weapon.",
+        "DescriptionDe": "You can re-roll wound rolls of 1 for this weapon.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IN",
+    "Cost": 3,
+    "NameEn": "Icon of Nurgle",
+    "NameFr": "Icon of Nurgle",
+    "NameDe": "Icon of Nurgle",
+    "DescriptionEn": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "DescriptionFr": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "DescriptionDe": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISN",
+    "Cost": 2,
+    "NameEn": "Instrument of Nurgle",
+    "NameFr": "Instrument of Nurgle",
+    "NameDe": "Instrument of Nurgle",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "WeaponProfiles": []
   }
 ]
