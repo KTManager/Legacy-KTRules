@@ -11,6 +11,17 @@
         "Details": []
     },
     {
+        "Id": "DAED",
+        "ModelId": "DE",
+        "NameEn": "Daemonic",
+        "NameFr": "Daemonic",
+        "NameDe": "Daemonic",
+        "DescriptionEn": "This model has a 5+ invulnerable save.",
+        "DescriptionFr": "This model has a 5+ invulnerable save.",
+        "DescriptionDe": "This model has a 5+ invulnerable save.",
+        "Details": []
+    },
+    {
         "Id": "UF",
         "ModelId": "BL",
         "NameEn": "Unstoppable Ferocity",
@@ -19,6 +30,17 @@
         "DescriptionEn": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
         "DescriptionFr": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
         "DescriptionDe": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
+        "Details": []
+    },
+    {
+        "Id": "QS",
+        "ModelId": "DE",
+        "NameEn": "Quicksilver Swiftness",
+        "NameFr": "Quicksilver Swiftness",
+        "NameDe": "Quicksilver Swiftness",
+        "DescriptionEn": "A model with this ability can be chosen to fight in the Hammer of Wrath section of the Fight phase, even if they have not charged in that battle round.",
+        "DescriptionFr": "A model with this ability can be chosen to fight in the Hammer of Wrath section of the Fight phase, even if they have not charged in that battle round.",
+        "DescriptionDe": "A model with this ability can be chosen to fight in the Hammer of Wrath section of the Fight phase, even if they have not charged in that battle round.",
         "Details": []
     }
 ]

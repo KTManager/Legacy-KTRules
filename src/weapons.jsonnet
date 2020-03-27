@@ -12023,5 +12023,54 @@ local common = import 'common.libsonnet';
     "DescriptionFr": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
     "DescriptionDe": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
     "WeaponProfiles": []
-  }
+  },
+  {
+    "Id": "PIC",
+    "Cost": 0,
+    "NameEn": "Piercing Claws",
+    "NameFr": "Piercing Claws",
+    "NameDe": "Piercing Claws",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PIC",
+        "NameEn": "Piercing Claws",
+        "NameFr": "Piercing Claws",
+        "NameDe": "Piercing Claws",
+        "DescriptionEn": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "DescriptionFr": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "DescriptionDe": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IS",
+    "Cost": 5,
+    "NameEn": "Icon of Slaanesh",
+    "NameFr": "Icon of Slaanesh",
+    "NameDe": "Icon of Slaanesh",
+    "DescriptionEn": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "DescriptionFr": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "DescriptionDe": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISS",
+    "Cost": 2,
+    "NameEn": "Instrument of Slaanesh",
+    "NameFr": "Instrument of Slaanesh",
+    "NameDe": "Instrument of Slaanesh",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "WeaponProfiles": []
+  },
 ]
