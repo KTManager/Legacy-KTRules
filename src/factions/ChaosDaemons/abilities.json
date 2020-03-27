@@ -1,0 +1,24 @@
+[
+    {
+        "Id": "DAE",
+        "ModelId": "BL",
+        "NameEn": "Daemonic",
+        "NameFr": "Daemonic",
+        "NameDe": "Daemonic",
+        "DescriptionEn": "This model has a 5+ invulnerable save.",
+        "DescriptionFr": "This model has a 5+ invulnerable save.",
+        "DescriptionDe": "This model has a 5+ invulnerable save.",
+        "Details": []
+    },
+    {
+        "Id": "UF",
+        "ModelId": "BL",
+        "NameEn": "Unstoppable Ferocity",
+        "NameFr": "Unstoppable Ferocity",
+        "NameDe": "Unstoppable Ferocity",
+        "DescriptionEn": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
+        "DescriptionFr": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
+        "DescriptionDe": "You can add 1 to the Attacks and Strength characteristics of a model with this ability in a battle round in which they charged.",
+        "Details": []
+    }
+]

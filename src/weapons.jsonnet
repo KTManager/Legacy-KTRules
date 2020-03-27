@@ -11974,5 +11974,54 @@ local common = import 'common.libsonnet';
         "WeaponType": "M"
       }
     ]
+  },
+  {
+    "Id": "HEB",
+    "Cost": 0,
+    "NameEn": "Hellblade",
+    "NameFr": "Hellblade",
+    "NameDe": "Hellblade",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "HEB",
+        "NameEn": "Hellblade",
+        "NameFr": "Hellblade",
+        "NameDe": "Hellblade",
+        "DescriptionEn": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "DescriptionFr": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "DescriptionDe": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-3",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IK",
+    "Cost": 3,
+    "NameEn": "Icon of Khorne",
+    "NameFr": "Icon of Khorne",
+    "NameDe": "Icon of Khorne",
+    "DescriptionEn": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "DescriptionFr": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "DescriptionDe": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISK",
+    "Cost": 2,
+    "NameEn": "Instrument of Khorne",
+    "NameFr": "Instrument of Khorne",
+    "NameDe": "Instrument of Khorne",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "WeaponProfiles": []
   }
 ]
