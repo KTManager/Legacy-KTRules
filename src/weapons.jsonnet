@@ -12073,4 +12073,53 @@ local common = import 'common.libsonnet';
     "DescriptionDe": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
     "WeaponProfiles": []
   },
+  {
+    "Id": "CF",
+    "Cost": 0,
+    "NameEn": "Coruscating Flames",
+    "NameFr": "Coruscating Flames",
+    "NameDe": "Coruscating Flames",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "CF",
+        "NameEn": "Coruscating Flames",
+        "NameFr": "Coruscating Flames",
+        "NameDe": "Coruscating Flames",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 18,
+        "ShotNumber": "2",
+        "Strength": "U",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "A"
+      }
+    ]
+  },
+  {
+    "Id": "IT",
+    "Cost": 3,
+    "NameEn": "Icon of Tzeentch",
+    "NameFr": "Icon of Tzeentch",
+    "NameDe": "Icon of Tzeentch",
+    "DescriptionEn": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "DescriptionFr": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "DescriptionDe": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "IST",
+    "Cost": 2,
+    "NameEn": "Instrument of Tzeentch",
+    "NameFr": "Instrument of Tzeentch",
+    "NameDe": "Instrument of Tzeentch",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "WeaponProfiles": []
+  }
 ]
