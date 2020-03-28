@@ -7159,7 +7159,7 @@ local common = import 'common.libsonnet';
       {
         "Id": "KRRS",
         "NameEn": "Kroot rifle (shooting)",
-        "NameFr": ""Fusil Kroot (tir)",
+        "NameFr": "Fusil Kroot (tir)",
         "NameDe": "Kroot-Langbüchse (Fernkampf)",
         "DescriptionEn": "",
         "DescriptionFr": "",
