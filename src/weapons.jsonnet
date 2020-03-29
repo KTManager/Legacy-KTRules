@@ -11976,6 +11976,33 @@ local common = import 'common.libsonnet';
     ]
   },
   {
+    "Id": "RODO",
+    "Cost": 2,
+    "NameEn": "Rod of Office",
+    "NameFr": "Rod of Office",
+    "NameDe": "Amtsstab",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "RODO",
+        "NameEn": "Rod of Office",
+        "NameFr": "Rod of Office",
+        "NameDe": "Amtsstab",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "0",
+        "ArmourPenetration": "0",
+        "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
     "Id": "NWHPS",
     "Cost": 0,
     "NameEn": "Neural Whips",
