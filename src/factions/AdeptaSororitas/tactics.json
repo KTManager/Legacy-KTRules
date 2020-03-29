@@ -88,10 +88,10 @@
         "Commander": false,
         "NameEn": "Fervent Whipping",
         "NameFr": "Fervent Whipping",
-        "NameDe": "Fervent Whipping",
+        "NameDe": "Leidenschaftliches Geisseln",
         "DescriptionEn": "Use this Tactic at the start of the Shooting phase if your kill team includes a REPENTIA SUPERIOR. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
         "DescriptionFr": "Use this Tactic at the start of the Shooting phase if your kill team includes a REPENTIA SUPERIOR. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
-        "DescriptionDe": "Use this Tactic at the start of the Shooting phase if your kill team includes a REPENTIA SUPERIOR. That model gains the following aura ability until the end of the battle round: As long as this model is not shaken, you can re-roll wound rolls of 1 for attacks made with melee weapons by friendly SISTER REPENTIA models that are within 6\" of this model.",
+        "DescriptionDe": "Setze diese Taktik zu Beginn der Fernkampfphase ein, wenn dein Kill Team eine REPENTIA SUPERIOR enthält. Dieses Modell enthält bis zum Ende der Schlachtrunde die folgende Aurafähigkeit: Solange dieses Modell nicht erschüttert ist, kannst du Verwundungswürfe von 1 für Attacken mit Nahkampfwaffen befreundeter SISTER-REPENTIA-Modelle, die sich innerhalb von 6 Zoll um dieses Modell befinden, wiederholen.",
         "Level": 0,
         "Cost": 1
     }
