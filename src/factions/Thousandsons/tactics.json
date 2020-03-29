@@ -163,7 +163,7 @@
     "Id": "TS11",
     "SpecialistId": null,
     "ModelProfileId": null,
-    "PhaseId": null,
+    "PhaseId": "7",
     "Aura": false,
     "Commander": false,
     "NameEn": "RITUAL SLAUGHTER",
