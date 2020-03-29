@@ -11827,10 +11827,10 @@ local common = import 'common.libsonnet';
         "Id": "PEVS",
         "NameEn": "Penitent Eviscerator",
         "NameFr": "Penitent Eviscerator",
-        "NameDe": "Büßer-Eviscerator",
-        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
-        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
-        "DescriptionDe": "Wenn du mit dieser Waffe attackierst, musst du 1 von den Trefferwürfen abziehen.",
+        "NameDe": "Penitent Eviscerator",
+        "DescriptionEn": "When resolving an attack made with this weapon, subtract 1 from the hit roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon, subtract 1 from the hit roll.",
+        "DescriptionDe": "When resolving an attack made with this weapon, subtract 1 from the hit roll.",
         "Range": 0,
         "ShotNumber": "0",
         "Strength": "x2",
@@ -11914,7 +11914,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11941,7 +11941,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11971,6 +11971,33 @@ local common = import 'common.libsonnet';
         "Strength": "0",
         "ArmourPenetration": "0",
         "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "NWHPS",
+    "Cost": 0,
+    "NameEn": "Neural Whips",
+    "NameFr": "Neural Whips",
+    "NameDe": "Neural Whips",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "NWHPS",
+        "NameEn": "Neural Whips",
+        "NameFr": "Neural Whips",
+        "NameDe": "Neural Whips",
+        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionDe": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-2",
+        "Damages": "1",
         "WeaponType": "M"
       }
     ]
