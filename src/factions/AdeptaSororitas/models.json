@@ -515,7 +515,17 @@
                   "SpecialistId": "F"
                 }
               ],
-              "ModelProfileWeapons": [],
+              "ModelProfileWeapons": [
+                {
+                  "WeaponId": "NWHPS"
+                },
+                {
+                  "WeaponId": "GF"
+                },
+                {
+                  "WeaponId": "GK"
+                }
+              ],
               "CostOverrides": [],
               "LevelCosts": [
                 {
@@ -536,17 +546,7 @@
                 }]
             }
           ],
-          "ModelWeapons": [            
-            {
-                "WeaponId": "NWHPS"
-            },
-            {
-                "WeaponId": "GF"
-            },
-            {
-                "WeaponId": "GK"
-            }
-          ],
+          "ModelWeapons": [],
           "WarGearOptions": []
     }
 ]
