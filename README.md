@@ -52,7 +52,7 @@ dotnet run --project KillTeam.RulesTool -- import -r ../KTRules/out
 dotnet run --project KillTeam.RulesTool -- cost GK
 
 # or to see a particular unit, faction id then model id
-dotnet run --project KillTeam.RulesTool -- cost GK GKTE
+dotnet run --project KillTeam.RulesRool -- cost GK GKTE
 
 # or to see all models for a faction
 dotnet run --project KillTeam.RulesTool -- cost GK --all

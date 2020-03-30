@@ -420,16 +420,7 @@ local termCostBonus = { "BOST": 4,  "COF": 2, "COP": 2, "COL": 2, "PB": 2};
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-	  {
-	    "WeaponId": "BST",
-	    "Cost": 3
-	  },
-	  {
-	    "WeaponId": "MAE",
-	    "Cost": 2
-	  }
-	],
+        "CostOverrides": [],
         "LevelCosts": []
       },
       {
@@ -484,16 +475,7 @@ local termCostBonus = { "BOST": 4,  "COF": 2, "COP": 2, "COL": 2, "PB": 2};
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-	  {
-	    "WeaponId": "BST", 
-            "Cost": 3
-	  },
-	  {
-	    "WeaponId": "MAE",
-	    "Cost": 2
-	  }
-	 ],
+        "CostOverrides": [],
         "LevelCosts": []
       },
       {
@@ -538,16 +520,7 @@ local termCostBonus = { "BOST": 4,  "COF": 2, "COP": 2, "COL": 2, "PB": 2};
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-	  {
-	    "WeaponId": "BST",
-	    "Cost": 3
-	  },
-	  {
-	    "WeaponId": "MAE",
-	    "Cost": 2
-	  }
-	],
+        "CostOverrides": [],
         "LevelCosts": []
       },
       {
@@ -602,16 +575,7 @@ local termCostBonus = { "BOST": 4,  "COF": 2, "COP": 2, "COL": 2, "PB": 2};
           }
         ],
         "ModelProfileWeapons": [],
-        "CostOverrides": [
-	  {
-	    "WeaponId": "BST",
-	    "Cost": 3
-	  },
-	  {
-	    "WeaponId": "MAE",
-	    "Cost": 2
-	  }
-	],
+        "CostOverrides": [],
         "LevelCosts": []
       }
     ],
