@@ -11974,5 +11974,201 @@ local common = import 'common.libsonnet';
         "WeaponType": "M"
       }
     ]
+  },
+  {
+    "Id": "HEB",
+    "Cost": 0,
+    "NameEn": "Hellblade",
+    "NameFr": "Hellblade",
+    "NameDe": "Hellblade",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "HEB",
+        "NameEn": "Hellblade",
+        "NameFr": "Hellblade",
+        "NameDe": "Hellblade",
+        "DescriptionEn": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "DescriptionFr": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "DescriptionDe": "Any attacks with a wound roll of 6+ for this weapon have a Damage characteristic of 2 instead of 1",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-3",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IK",
+    "Cost": 3,
+    "NameEn": "Icon of Khorne",
+    "NameFr": "Icon of Khorne",
+    "NameDe": "Icon of Khorne",
+    "DescriptionEn": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "DescriptionFr": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "DescriptionDe": "You can re-roll charge rolls for BLOODLETTERS within 6\" of any friendly models equipped with an Icon of Khorne.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISK",
+    "Cost": 2,
+    "NameEn": "Instrument of Khorne",
+    "NameFr": "Instrument of Khorne",
+    "NameDe": "Instrument of Khorne",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for BLOODLETTERS within 6\" of any friendly models equipped with an Instrument of Khorne",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "PIC",
+    "Cost": 0,
+    "NameEn": "Piercing Claws",
+    "NameFr": "Piercing Claws",
+    "NameDe": "Piercing Claws",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PIC",
+        "NameEn": "Piercing Claws",
+        "NameFr": "Piercing Claws",
+        "NameDe": "Piercing Claws",
+        "DescriptionEn": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "DescriptionFr": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "DescriptionDe": "Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4 instead of -1.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-1",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IS",
+    "Cost": 5,
+    "NameEn": "Icon of Slaanesh",
+    "NameFr": "Icon of Slaanesh",
+    "NameDe": "Icon of Slaanesh",
+    "DescriptionEn": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "DescriptionFr": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "DescriptionDe": "If you make a wound roll of 6\" for an attack made by a DAEMONETTE, whilst they are within 6\" of any friendly models equipped with an Icon of Slaanesh, that attack inflicts 1 mortal wound in addition to its normal damage.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISS",
+    "Cost": 2,
+    "NameEn": "Instrument of Slaanesh",
+    "NameFr": "Instrument of Slaanesh",
+    "NameDe": "Instrument of Slaanesh",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for DAEMONETTES within 6\" of any friendly models equipped with an Instrument of Slaanesh.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "CF",
+    "Cost": 0,
+    "NameEn": "Coruscating Flames",
+    "NameFr": "Coruscating Flames",
+    "NameDe": "Coruscating Flames",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "CF",
+        "NameEn": "Coruscating Flames",
+        "NameFr": "Coruscating Flames",
+        "NameDe": "Coruscating Flames",
+        "DescriptionEn": "",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 18,
+        "ShotNumber": "2",
+        "Strength": "U",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "A"
+      }
+    ]
+  },
+  {
+    "Id": "IT",
+    "Cost": 3,
+    "NameEn": "Icon of Tzeentch",
+    "NameFr": "Icon of Tzeentch",
+    "NameDe": "Icon of Tzeentch",
+    "DescriptionEn": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "DescriptionFr": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "DescriptionDe": "At the start of your turn in the Psychic phase, roll a D6 for each model from your kill team equipped with an Icon of Tzeentch. On a 6, inflict 1 mortal wound on the closest enemy model within 12\" of the model being rolled for.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "IST",
+    "Cost": 2,
+    "NameEn": "Instrument of Tzeentch",
+    "NameFr": "Instrument of Tzeentch",
+    "NameDe": "Instrument of Tzeentch",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for HORROWS within 6\" of any friendly models equipped with an Instrument of Tzeentch.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "PSW",
+    "Cost": 0,
+    "NameEn": "Plaguesword",
+    "NameFr": "Plaguesword",
+    "NameDe": "Plaguesword",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PSW",
+        "NameEn": "Plaguesword",
+        "NameFr": "Plaguesword",
+        "NameDe": "Plaguesword",
+        "DescriptionEn": "You can re-roll wound rolls of 1 for this weapon.",
+        "DescriptionFr": "You can re-roll wound rolls of 1 for this weapon.",
+        "DescriptionDe": "You can re-roll wound rolls of 1 for this weapon.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "IN",
+    "Cost": 3,
+    "NameEn": "Icon of Nurgle",
+    "NameFr": "Icon of Nurgle",
+    "NameDe": "Icon of Nurgle",
+    "DescriptionEn": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "DescriptionFr": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "DescriptionDe": "Subtract 1 from the Leadership characteristic of enemy models within 6\" of any models equipped with an Icon of Nurgle.",
+    "WeaponProfiles": []
+  },
+  {
+    "Id": "ISN",
+    "Cost": 2,
+    "NameEn": "Instrument of Nurgle",
+    "NameFr": "Instrument of Nurgle",
+    "NameDe": "Instrument of Nurgle",
+    "DescriptionEn": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "DescriptionFr": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "DescriptionDe": "Add 1 to Advance and charge rolls made for PLAGUEBEARERS within 6\" of any friendly models equipped with an Instrument of Nurgle.",
+    "WeaponProfiles": []
   }
 ]
