@@ -124,7 +124,7 @@
           {
             "Id": "358",
             "MaximumPerTeam": 0,
-            "Operation": "PB&EPT:(((PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&!(PB|HACHAX|EPT|PP|PAX|GEN|MAE|EPE1))|LCL2)|(PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&(BO|COB|COL|COF|COP)",
+            "Operation": "PB&EPT:(((PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&!(PB|HACHAX|EPT|PP|PAX|GEN|MAE|EPE1))|LCL2)|((PB|HACHAX|EPT|LCL|PP|PAX|GEN|MAE|EPE1)&(BO|COB|COL|COF|COP))",
             "Exclusion": null
           }
         ],
