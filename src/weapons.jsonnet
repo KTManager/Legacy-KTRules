@@ -11828,8 +11828,8 @@ local common = import 'common.libsonnet';
         "NameEn": "Penitent Eviscerator",
         "NameFr": "Penitent Eviscerator",
         "NameDe": "Büßer-Eviscerator",
-        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
-        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionEn": "When resolving an attack made with this weapon, subtract 1 from the hit roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon, subtract 1 from the hit roll.",
         "DescriptionDe": "Wenn du mit dieser Waffe attackierst, musst du 1 von den Trefferwürfen abziehen.",
         "Range": 0,
         "ShotNumber": "0",
@@ -11914,7 +11914,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11941,7 +11941,7 @@ local common = import 'common.libsonnet';
         "DescriptionDe": "",
         "Range": 0,
         "ShotNumber": "0",
-        "Strength": "0",
+        "Strength": "U",
         "ArmourPenetration": "0",
         "Damages": "0",
         "WeaponType": "M"
@@ -11971,6 +11971,33 @@ local common = import 'common.libsonnet';
         "Strength": "0",
         "ArmourPenetration": "0",
         "Damages": "0",
+        "WeaponType": "M"
+      }
+    ]
+  },
+  {
+    "Id": "NWHPS",
+    "Cost": 0,
+    "NameEn": "Neural Whips",
+    "NameFr": "Neural Whips",
+    "NameDe": "Neuralpeitschen",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "NWHPS",
+        "NameEn": "Neural Whips",
+        "NameFr": "Neural Whips",
+        "NameDe": "Neuralpeitschen",
+        "DescriptionEn": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionFr": "When resolving an attack made with this weapon against a model which has a Leadership characteristic of 7 or less, add 1 to the wound roll.",
+        "DescriptionDe": "Addiere bei Attacken mit dieser Waffe gegen ein Modell mit einem Moralwert von 7 oder weniger 1 zum Verwundungswurf.",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "-2",
+        "Damages": "1",
         "WeaponType": "M"
       }
     ]
