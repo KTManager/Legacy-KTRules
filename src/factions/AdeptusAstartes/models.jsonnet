@@ -277,7 +277,7 @@ local utils = import '../../utils.libsonnet';
           {
             "Id": "243",
             "MaximumPerTeam": 0,
-            "Operation": "FBO:EPE|EPT",
+            "Operation": "FBO:EPE|EPT|LFL|(LFL&EPT)|(LFL&THA)|(LFL&GEN)|(LFL&EPE)",
             "Exclusion": "AAI3"
           }
         ],
