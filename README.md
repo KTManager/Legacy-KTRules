@@ -67,7 +67,7 @@ When you're ready to apply changes to KTManagerApp, make sure that version.txt i
 ./build.py clean release
 
 # copy them to KTManagerApp
-cp -r out/* ../KTManagerApp/SharedAssets/Rules
+cp -r out/* ../KTManagerApp/KillTeam/SharedAssets/Rules
 
 # fix up the line endings
 find KillTeam/SharedAssets/Rules -type f -print0 | xargs -0 unix2dos
