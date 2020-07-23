@@ -351,8 +351,8 @@
   },
   {
     "Id": "SPECR4",
-    "ModelId": null,
-    "ModelProfileId": "AMG",
+    "ModelId": "AMG",
+    "ModelProfileId": null,
     "NameEn": "Specialist Retainer",
     "NameFr": "",
     "NameDe": "",
