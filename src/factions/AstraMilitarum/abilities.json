@@ -207,6 +207,17 @@
     "Details": []
   },
   {
+    "Id": "HA",
+    "ModelId": "AMG",
+    "NameEn": "Hacking Advance",
+    "NameFr": "",
+    "NameDe": "",
+    "DescriptionEn": "Each unmodified hit roll of 6 made for Gotfet de Montbard's attacks in the Fight phase scores 2 hits instead of 1.",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "Details": []
+  },
+  {
     "Id": "MANF",
     "ModelId": null,
     "ModelProfileId": "AMPV",
@@ -334,6 +345,18 @@
     "NameFr": "",
     "NameDe": "",
     "DescriptionEn": "Rein is always a Sniper specialist, but this does not count towards the maximum number of specialists in your kill team.",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "Details": []
+  },
+  {
+    "Id": "SPECR4",
+    "ModelId": "AMG",
+    "ModelProfileId": null,
+    "NameEn": "Specialist Retainer",
+    "NameFr": "",
+    "NameDe": "",
+    "DescriptionEn": "This model is always a Combat specialist, but this does not count towards the maximum number of specialists in your kill team.",
     "DescriptionFr": "",
     "DescriptionDe": "",
     "Details": []

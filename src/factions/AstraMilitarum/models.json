@@ -1747,5 +1747,55 @@
       }
     ],
     "WarGearOptions": []
+  },
+  {
+    "Id": "AMG",
+    "NameEn": "Gotfret De Montbard",
+    "NameFr": "Gotfret De Montbard",
+    "NameDe": "Gotfret De Montbard",
+    "KeywordsEn": "IMPERIUM, ADEPTUS MINISTORUM, INFANTRY, CRUSADER, GOTFRET DE MONTBARD",
+    "KeywordsFr": "IMPERIUM, ADEPTUS MINISTORUM, INFANTERIE, CROISÉ, GOTFRET DE MONTBARD",
+    "KeywordsDe": "IMPERIUM, ADEPTUS MINISTORUM, INFANTERIE, KREUZRITTER, GOTFRET DE MONTBARD",
+    "ModelProfiles": [
+      {
+        "Id": "AMG1",
+        "Movement": 6,
+        "WeaponSkill": 3,
+        "BallisticSkill": 4,
+        "Strength": 3,
+        "Toughness": 3,
+        "Wounds": 3,
+        "Attacks": "4",
+        "Leadership": 8,
+        "Save": 4,
+        "MaximumNumber": 1,
+        "Cost": 20,
+        "NameEn": "Gotfret De Montbard",
+        "NameFr": "Gotfret De Montbard",
+        "NameDe": "Gotfret De Montbard",
+        "IsCommander": false,
+        "NumberOfKnownPsychics": 0,
+        "NumberOfPsychicsManifestationPerRound": 0,
+        "NumberOfPsychicsDenialPerRound": 0,
+        "WarGearOptions": [],
+        "Specialists": [
+          {
+            "SpecialistId": "CB"
+          }
+        ],
+        "ModelProfileWeapons": [
+          {
+            "WeaponId": "EPE"
+          },
+          {
+            "WeaponId": "BST"
+          }
+        ],
+        "CostOverrides": [],
+        "LevelCosts": []
+      }
+    ],
+    "ModelWeapons": [],
+    "WarGearOptions": []
   }
 ]
