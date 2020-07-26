@@ -136,7 +136,12 @@
                         "WeaponId": "GK"
                     }
                 ],
-                "CostOverrides": [],
+                "CostOverrides": [
+                  {
+                    "WeaponId": "HFL",
+                    "Cost": 4
+                  }
+                ],
                 "LevelCosts": []
             },
             {
