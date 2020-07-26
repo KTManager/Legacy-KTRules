@@ -287,6 +287,18 @@
     "Details": []
   },
   {
+    "Id": "PBSS",
+    "ModelId": "TAX",
+    "ModelProfileId": null,
+    "NameEn": "For the Greater Good",
+    "NameFr": "Pour le bien suprême",
+    "NameDe": "Für das Höhere Wohl",
+    "DescriptionEn": "When an enemy model declares a charge against a model from your kill team, models from your kill team with this ability within 6\" of one of the charging model’s targets may fire Overwatch as if they were also targeted. Once a model has done so, they cannot fire Overwatch or Retreat for the rest of the phase.",
+    "DescriptionFr": "Lorsqu'une figurine ennemie déclare une charge contre une figurine de votre kill team, les figurines de votre kill team, les figurines de votre kill team avec cette aptitude à 6\" d'une des cibles de la figurine qui chargent peuvent tirer en état d'alerte comme si elles étaient ciblées elles aussi. Une figurine qui agit ainsi ne peut plus tirer en état d'alerte jusqu'à la fin de la phase.",
+    "DescriptionDe": "Wenn ein feindliches Modell einen Angriff gegen ein Modell deines Kill Teams ansagt, dürfen Modelle deines Kill Teams mit dieser Fähigkeit, die sich innerhalb von 6\" um das Ziel des angreifenden Modells befinden, Abwehrfeuer abgeben, als wären sie selbst das Ziel. Sobald ein Modell dies getan hat, kann es für den Rest dieser Phase nicht noch einmal Abwehrfeuer abgeben und nicht mehr ausweichen.",
+    "Details": []
+  },
+  {
     "Id": "PFS",
     "ModelId": null,
     "ModelProfileId": "MV7",
