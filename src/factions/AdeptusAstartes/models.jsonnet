@@ -330,6 +330,116 @@ local utils = import '../../utils.libsonnet';
     ]
   },
   {
+    "Id": "AAINC",
+    "NameEn": "Incursor",
+    "NameFr": "Incursor",
+    "NameDe": "Incursor",
+    "KeywordsEn": "IMPERIUM, INFANTRY, PHOBOS, PRIMARIS, INCURSOR",
+    "KeywordsFr": "IMPERIUM, INFANTRY, PHOBOS, PRIMARIS, INCURSOR",
+    "KeywordsDe": "IMPERIUM, INFANTERIE, PHOBOS, PRIMARIS, INCURSOR",
+    "ModelProfiles": [
+      {
+        "Id": "AAINC",
+        "Movement": 6,
+        "WeaponSkill": 3,
+        "BallisticSkill": 3,
+        "Strength": 4,
+        "Toughness": 4,
+        "Wounds": 2,
+        "Attacks": "2",
+        "Leadership": 7,
+        "Save": 3,
+        "MaximumNumber": 0,
+        "Cost": 16,
+        "NameEn": "Incursor",
+        "NameFr": "Incursor",
+        "NameDe": "Incursor",
+        "IsCommander": false,
+        "NumberOfKnownPsychics": 0,
+        "NumberOfPsychicsManifestationPerRound": 0,
+        "NumberOfPsychicsDenialPerRound": 0,
+        "WarGearOptions": [],
+        "Specialists": [
+          {
+            "SpecialistId": "CO"
+          },
+          {
+            "SpecialistId": "D"
+          },
+          {
+            "SpecialistId": "SC"
+          },
+          {
+            "SpecialistId": "V"
+          }
+        ],
+        "ModelProfileWeapons": [],
+        "CostOverrides": [],
+        "LevelCosts": []
+      },
+      {
+        "Id": "AAINS",
+        "Movement": 6,
+        "WeaponSkill": 3,
+        "BallisticSkill": 3,
+        "Strength": 4,
+        "Toughness": 4,
+        "Wounds": 2,
+        "Attacks": "3",
+        "Leadership": 8,
+        "Save": 3,
+        "MaximumNumber": 1,
+        "Cost": 17,
+        "NameEn": "Incursor Sergeant",
+        "NameFr": "Incursor Sergeant",
+        "NameDe": "Incursor Sergeant",
+        "IsCommander": false,
+        "NumberOfKnownPsychics": 0,
+        "NumberOfPsychicsManifestationPerRound": 0,
+        "NumberOfPsychicsDenialPerRound": 0,
+        "WarGearOptions": [],
+        "Specialists": [
+          {
+            "SpecialistId": "CO"
+          },
+          {
+            "SpecialistId": "D"
+          },
+          {
+            "SpecialistId": "L"
+          },
+          {
+            "SpecialistId": "SC"
+          },
+          {
+            "SpecialistId": "V"
+          }
+        ],
+        "ModelProfileWeapons": [],
+        "CostOverrides": [],
+        "LevelCosts": []
+      }
+    ],
+    "ModelWeapons": [
+      {
+        "WeaponId": "GF"
+      },
+      {
+        "WeaponId": "GK"
+      },
+      {
+        "WeaponId": "OBC"
+      },
+      {
+        "WeaponId": "PCB"
+      },
+      {
+        "WeaponId": "PB"
+      }
+    ],
+    "WarGearOptions": []
+  },
+  {
     "Id": "AAINF",
     "NameEn": "Infiltrator",
     "NameFr": "Infiltrator",
