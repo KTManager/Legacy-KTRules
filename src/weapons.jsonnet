@@ -9067,6 +9067,33 @@ local common = import 'common.libsonnet';
     ]
   },
   {
+    "Id": "OBC",
+    "Cost": 0,
+    "NameEn": "Occulus bolt carbine",
+    "NameFr": "Carabine bolter occulus",
+    "NameDe": "Occulus-Boltkarabiner",
+    "DescriptionEn": "Add 1 to hit rolls for this weapon when targeting a model that is obscured.",
+    "DescriptionFr": "Ajoutez. 1 aux jets de touche de cette arme. quand elle vise une figurine masquée",
+    "DescriptionDe": "Addiere 1 auf Trefferwürfe für diese Waffe, wenn das Ziel ein verdecktes Modell ist.",
+    "WeaponProfiles": [
+      {
+        "Id": "OBC",
+        "NameEn": "Occulus bolt carbine",
+        "NameFr": "Carabine bolter occulus",
+        "NameDe": "Occulus-Boltkarabiner",
+        "DescriptionEn": "Add 1 to hit rolls for this weapon when targeting a model that is obscured.",
+        "DescriptionFr": "Ajoutez. 1 aux jets de touche de cette arme. quand elle vise une figurine masquée",
+        "DescriptionDe": "Addiere 1 auf Trefferwürfe für diese Waffe, wenn das Ziel ein verdecktes Modell ist.",
+        "Range": 24,
+        "ShotNumber": "1",
+        "Strength": "4",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponTypeId": "R"
+      }
+    ]
+  },
+  {
     "Id": "OMN",
     "Cost": 1,
     "NameEn": "Omnispex",
@@ -9474,6 +9501,33 @@ local common = import 'common.libsonnet';
         "ArmourPenetration": "-1",
         "Damages": "1",
         "WeaponTypeId": "P"
+      }
+    ]
+  },
+  {
+    "Id": "PCB",
+    "Cost": 0,
+    "NameEn": "Paired combat blades",
+    "NameFr": "",
+    "NameDe": "",
+    "DescriptionEn": "",
+    "DescriptionFr": "",
+    "DescriptionDe": "",
+    "WeaponProfiles": [
+      {
+        "Id": "PCB",
+        "NameEn": "Paired combat blades",
+        "NameFr": "",
+        "NameDe": "",
+        "DescriptionEn": "When resolving an attack made with this weapon, an unmodified hit roll of 6 scores 1 additional hit.",
+        "DescriptionFr": "",
+        "DescriptionDe": "",
+        "Range": 0,
+        "ShotNumber": "0",
+        "Strength": "U",
+        "ArmourPenetration": "0",
+        "Damages": "1",
+        "WeaponTypeId": "M"
       }
     ]
   },
