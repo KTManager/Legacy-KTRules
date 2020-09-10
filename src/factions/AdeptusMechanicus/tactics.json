@@ -77,7 +77,7 @@
     "DescriptionFr": "Utilisez cette tactique au début de la phase de moral. Choisissez une figurine de votre kill team et retirez D3 blessures légères à cette figurine.",
     "DescriptionDe": "Setze diese Taktik zu Beginn der Moralphase ein. Wähle ein Modell deines Kill Teams und entferne W3 Fleischwunden von dem gewählten Modell.",
     "Level": 0,
-    "Cost": 1
+    "Cost": 2
   },
   {
     "Id": "ME14",
