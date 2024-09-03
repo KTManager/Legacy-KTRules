@@ -90,7 +90,7 @@ jobs:
     
     # get the artifact
     - name: download the rules output
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: rules-out-${{ matrix.rules-version }}
 
@@ -118,11 +118,11 @@ jobs:
 
     steps:
     - name: fetch old dump
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: rt-dump-old
     - name: fetch new dump
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: rt-dump-new
     - name: diff
